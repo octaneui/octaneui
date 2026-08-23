@@ -1,9 +1,12 @@
 import type { OctaneNode } from "octane";
 import type { Octane } from "octane/jsx-runtime";
 
-export interface InputProps extends Octane.InputHTMLAttributes<
-  HTMLInputElement
-> {
+type InputNativeProps = Omit<
+  Octane.InputHTMLAttributes<HTMLInputElement>,
+  "className"
+>;
+
+export interface InputProps extends InputNativeProps {
   left?: OctaneNode;
   right?: OctaneNode;
 }
@@ -11,16 +14,14 @@ export interface InputProps extends Octane.InputHTMLAttributes<
 export function Input({
   left,
   right,
-  class: className,
-  className: classNameProp,
   style,
   ...rest
 }: InputProps) @{
-  <div class={["root", className, classNameProp]} style={style}>
+  <div class={["root", rest.class]} style={style}>
     @if (left) {
       <span class="slot">{left}</span>
     }
-    <input class="field" {...rest} />
+    <input {...rest} class="field" />
     @if (right) {
       <span class="slot">{right}</span>
     }

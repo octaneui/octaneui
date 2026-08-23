@@ -18,6 +18,11 @@ export default defineConfig({
         entry: ["ButtonDocs", "/src/pages/Button.tsrx"],
         layout: "/src/Layout.tsrx",
       }),
+      new RenderRoute({
+        path: "/components/select",
+        entry: ["SelectDocs", "/src/pages/Select.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
     ],
   },
 });

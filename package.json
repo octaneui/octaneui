@@ -12,6 +12,7 @@
     ".": "./src/index.tsrx",
     "./button": "./src/components/Button.tsrx",
     "./input": "./src/components/Input.tsrx",
+    "./select": "./src/components/Select.tsrx",
     "./styles.css": "./src/styles.css"
   },
   "scripts": {

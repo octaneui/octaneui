@@ -1,7 +1,12 @@
 import type { OctaneNode } from "octane";
 import type { Octane } from "octane/jsx-runtime";
 
-export interface ButtonProps extends Octane.ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonNativeProps = Omit<
+  Octane.ButtonHTMLAttributes<HTMLButtonElement>,
+  "className"
+>;
+
+export interface ButtonProps extends ButtonNativeProps {
   left?: OctaneNode;
   right?: OctaneNode;
 }
@@ -10,15 +15,13 @@ export function Button({
   left,
   right,
   children,
-  class: className,
-  className: classNameProp,
   type,
   ...rest
 }: ButtonProps) @{
   <button
     type={type ?? "button"}
-    class={["root", className, classNameProp]}
     {...rest}
+    class={["root", rest.class]}
   >
     @if (left) {
       <span class="slot">{left}</span>

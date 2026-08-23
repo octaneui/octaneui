@@ -10,6 +10,7 @@ export function Layout(props: LayoutProps) @{
       <a class="nav-link" href="/">Octane UI</a>
       <a class="nav-link" href="/components/input">Input</a>
       <a class="nav-link" href="/components/button">Button</a>
+      <a class="nav-link" href="/components/select">Select</a>
     </nav>
     <main class="main">{props.children}</main>
 

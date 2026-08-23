@@ -1,6 +1,7 @@
 const COMPONENTS = [
   { name: "Input", href: "/components/input" },
   { name: "Button", href: "/components/button" },
+  { name: "Select", href: "/components/select" },
 ];
 
 export function Home() @{

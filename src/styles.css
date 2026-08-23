@@ -8,6 +8,7 @@
     --surface-subtle,
     color-mix(in srgb, CanvasText 4%, Canvas)
   );
+  --control-picker-bg: color-mix(in srgb, CanvasText 6%, Canvas);
   --control-border: var(
     --border,
     color-mix(in srgb, CanvasText 12%, transparent)
