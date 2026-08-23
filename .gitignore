@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vscode/
+.claude/
+.cursor/
+.DS_Store
+.env*

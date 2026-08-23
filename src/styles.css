@@ -1,0 +1,24 @@
+:root {
+  --radius: 0.625rem;
+  --control-height: 2.25rem;
+  --control-pad-x: 0.75rem;
+  --control-gap: 0.5rem;
+  --control-font-size: 0.9375rem;
+  --control-bg: var(
+    --surface-subtle,
+    color-mix(in srgb, CanvasText 4%, Canvas)
+  );
+  --control-border: var(
+    --border,
+    color-mix(in srgb, CanvasText 12%, transparent)
+  );
+  --control-text: var(--text, CanvasText);
+  --control-muted: var(
+    --text-secondary,
+    color-mix(in srgb, CanvasText 55%, Canvas)
+  );
+  --control-accent: var(--accent-text, #ff5d72);
+  --control-accent-fg: #fff;
+  --control-ring: 0 0 0 3px
+    color-mix(in srgb, var(--control-accent) 30%, transparent);
+}
