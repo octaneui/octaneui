@@ -4,16 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "workspaces": ["docs"],
-  "files": ["dist"],
-  "main": "./dist/octane-ui.js",
-  "module": "./dist/octane-ui.js",
+  "files": ["src", "README.md"],
+  "main": "./src/index.tsrx",
+  "module": "./src/index.tsrx",
+  "types": "./src/index.tsrx",
   "exports": {
-    ".": {
-      "import": "./dist/octane-ui.js"
-    }
+    ".": "./src/index.tsrx",
+    "./button": "./src/components/Button.tsrx",
+    "./input": "./src/components/Input.tsrx",
+    "./styles.css": "./src/styles.css"
   },
   "scripts": {
-    "build": "vite build",
     "typecheck": "tsrx-tsc --noEmit -p tsconfig.json"
   },
   "peerDependencies": {

@@ -8,17 +8,14 @@ export interface InputProps extends Octane.InputHTMLAttributes<
   right?: OctaneNode;
 }
 
-export function Input(props: InputProps) @{
-  const {
-    left,
-    right,
-    class: className,
-    className: classNameProp,
-    style,
-    children: _children,
-    ...rest
-  } = props;
-
+export function Input({
+  left,
+  right,
+  class: className,
+  className: classNameProp,
+  style,
+  ...rest
+}: InputProps) @{
   <div class={["root", className, classNameProp]} style={style}>
     @if (left) {
       <span class="slot">{left}</span>

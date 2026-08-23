@@ -6,17 +6,15 @@ export interface ButtonProps extends Octane.ButtonHTMLAttributes<HTMLButtonEleme
   right?: OctaneNode;
 }
 
-export function Button(props: ButtonProps) @{
-  const {
-    left,
-    right,
-    children,
-    class: className,
-    className: classNameProp,
-    type,
-    ...rest
-  } = props;
-
+export function Button({
+  left,
+  right,
+  children,
+  class: className,
+  className: classNameProp,
+  type,
+  ...rest
+}: ButtonProps) @{
   <button
     type={type ?? "button"}
     class={["root", className, classNameProp]}
