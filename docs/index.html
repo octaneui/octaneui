@@ -4,6 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Octane UI</title>
+    <script>
+      try {
+        var theme = localStorage.getItem("theme");
+        var light =
+          theme === "light" ||
+          (theme !== "dark" &&
+            matchMedia("(prefers-color-scheme: light)").matches);
+        if (light) document.documentElement.classList.add("light");
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="/src/styles.css" />
     <!--ssr-head-->
   </head>
