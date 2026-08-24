@@ -1,0 +1,14 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z", key: "kmsa83" }],
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+];
+
+const CirclePlay = createLucideIcon("circle-play", iconNode);
+
+export default CirclePlay;

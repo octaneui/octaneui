@@ -1,0 +1,16 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8", key: "1k78r4" }],
+  ["path", { d: "M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4", key: "fb3tl2" }],
+  ["path", { d: "M12 4v6", key: "1dcgq2" }],
+  ["path", { d: "M2 18h20", key: "ajqnye" }],
+];
+
+const BedDouble = createLucideIcon("bed-double", iconNode);
+
+export default BedDouble;

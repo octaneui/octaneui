@@ -1,0 +1,16 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25", key: "5dloqd" }],
+  ["path", { d: "M5 12a2 2 0 0 1-2-2 9 7 0 0 1 18 0 2 2 0 0 1-2 2", key: "1vl3my" }],
+  ["path", { d: "M5 16a2 2 0 0 0-2 2 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 2 2 0 0 0-2-2q0 0 0 0", key: "1us75o" }],
+  ["path", { d: "m6.67 12 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2", key: "qqzweh" }],
+];
+
+const Hamburger = createLucideIcon("hamburger", iconNode);
+
+export default Hamburger;

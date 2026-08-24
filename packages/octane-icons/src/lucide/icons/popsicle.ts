@@ -1,0 +1,14 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M18.6 14.4c.8-.8.8-2 0-2.8l-8.1-8.1a4.95 4.95 0 1 0-7.1 7.1l8.1 8.1c.9.7 2.1.7 2.9-.1Z", key: "1o68ps" }],
+  ["path", { d: "m22 22-5.5-5.5", key: "17o70y" }],
+];
+
+const Popsicle = createLucideIcon("popsicle", iconNode);
+
+export default Popsicle;

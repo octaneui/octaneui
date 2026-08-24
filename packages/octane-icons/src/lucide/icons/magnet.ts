@@ -1,0 +1,15 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "m12 15 4 4", key: "lnac28" }],
+  ["path", { d: "M2.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.029-6.029a1 1 0 1 1 3 3l-6.029 6.029a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.365-6.367A1 1 0 0 0 8.716 4.282z", key: "nlhkjb" }],
+  ["path", { d: "m5 8 4 4", key: "j6kj7e" }],
+];
+
+const Magnet = createLucideIcon("magnet", iconNode);
+
+export default Magnet;

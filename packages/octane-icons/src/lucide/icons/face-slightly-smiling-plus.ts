@@ -1,0 +1,18 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M13.267 2.08a10 10 0 108.653 8.653", key: "1wbpyh" }],
+  ["path", { d: "M15 10V9", key: "4dkmfx" }],
+  ["path", { d: "M16 5h6", key: "1vod17" }],
+  ["path", { d: "M16.472 15a6 6 0 01-8.943 0", key: "7qomzy" }],
+  ["path", { d: "M19 2v6", key: "4bpg5p" }],
+  ["path", { d: "M9 10V9", key: "1lazqi" }],
+];
+
+const FaceSlightlySmilingPlus = createLucideIcon("face-slightly-smiling-plus", iconNode);
+
+export default FaceSlightlySmilingPlus;

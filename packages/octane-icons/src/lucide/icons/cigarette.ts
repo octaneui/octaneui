@@ -1,0 +1,17 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M17 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14", key: "1mb5g1" }],
+  ["path", { d: "M18 8c0-2.5-2-2.5-2-5", key: "1il607" }],
+  ["path", { d: "M21 16a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1", key: "1yl5r7" }],
+  ["path", { d: "M22 8c0-2.5-2-2.5-2-5", key: "1gah44" }],
+  ["path", { d: "M7 12v4", key: "jqww69" }],
+];
+
+const Cigarette = createLucideIcon("cigarette", iconNode);
+
+export default Cigarette;

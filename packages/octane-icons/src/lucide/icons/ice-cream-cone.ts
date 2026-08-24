@@ -1,0 +1,15 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11", key: "1v6356" }],
+  ["path", { d: "M17 7A5 5 0 0 0 7 7", key: "151p3v" }],
+  ["path", { d: "M17 7a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4", key: "1sdaij" }],
+];
+
+const IceCreamCone = createLucideIcon("ice-cream-cone", iconNode);
+
+export default IceCreamCone;

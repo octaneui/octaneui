@@ -1,33 +1,17 @@
 {
-  "name": "octane-ui",
+  "name": "octane-ui-monorepo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "workspaces": ["docs"],
-  "files": ["src", "README.md"],
-  "main": "./src/index.tsrx",
-  "module": "./src/index.tsrx",
-  "types": "./src/index.tsrx",
-  "exports": {
-    ".": "./src/index.tsrx",
-    "./button": "./src/components/Button.tsrx",
-    "./input": "./src/components/Input.tsrx",
-    "./select": "./src/components/Select.tsrx",
-    "./styles.css": "./src/styles.css"
-  },
+  "workspaces": ["packages/*"],
   "scripts": {
-    "typecheck": "tsrx-tsc --noEmit -p tsconfig.json"
-  },
-  "peerDependencies": {
-    "octane": "^0.1.44"
+    "dev": "bun run --filter octane-ui-docs dev",
+    "build": "bun run --filter octane-ui-docs build",
+    "preview": "bun run --filter octane-ui-docs preview",
+    "typecheck": "bun run --filter '*' typecheck"
   },
   "devDependencies": {
-    "@octanejs/vite-plugin": "^0.1.44",
     "@tsrx/prettier-plugin": "^0.3.124",
-    "@tsrx/typescript-plugin": "^0.3.124",
-    "octane": "^0.1.44",
-    "prettier": "^3.9.6",
-    "typescript": "^7.0.2",
-    "vite": "^8.2.2"
+    "prettier": "^3.9.6"
   }
 }

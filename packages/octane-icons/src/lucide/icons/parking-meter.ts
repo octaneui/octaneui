@@ -1,0 +1,17 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M11 15h2", key: "199qp6" }],
+  ["path", { d: "M12 12v3", key: "158kv8" }],
+  ["path", { d: "M12 19v3", key: "npa21l" }],
+  ["path", { d: "M15.282 19a1 1 0 0 0 .948-.68l2.37-6.988a7 7 0 1 0-13.2 0l2.37 6.988a1 1 0 0 0 .948.68z", key: "1jofit" }],
+  ["path", { d: "M9 9a3 3 0 1 1 6 0", key: "jdoeu8" }],
+];
+
+const ParkingMeter = createLucideIcon("parking-meter", iconNode);
+
+export default ParkingMeter;

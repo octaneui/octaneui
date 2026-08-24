@@ -1,0 +1,19 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "m17 17 5 5", key: "p7ous7" }],
+  ["path", { d: "M19.323 13.744A9 3 0 0 0 21 12", key: "hmry77" }],
+  ["path", { d: "M21 13.127V5", key: "59o5vz" }],
+  ["path", { d: "m22 17-5 5", key: "gqnmv0" }],
+  ["path", { d: "M3 12A9 3 0 0 0 13.563 14.954", key: "1rmyhq" }],
+  ["path", { d: "M3 5V19A9 3 0 0 0 13 21.981", key: "159k2m" }],
+  ["ellipse", { cx: "12", cy: "5", rx: "9", ry: "3", key: "msslwz" }],
+];
+
+const DatabaseX = createLucideIcon("database-x", iconNode);
+
+export default DatabaseX;

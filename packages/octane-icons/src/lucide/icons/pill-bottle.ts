@@ -1,0 +1,15 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M18 11h-4a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h4", key: "17ldeb" }],
+  ["path", { d: "M6 7v13a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7", key: "nc37y6" }],
+  ["rect", { width: "16", height: "5", x: "4", y: "2", rx: "1", key: "3jeezo" }],
+];
+
+const PillBottle = createLucideIcon("pill-bottle", iconNode);
+
+export default PillBottle;

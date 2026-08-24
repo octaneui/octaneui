@@ -1,0 +1,17 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "m10.8 5 2.111 4.223", key: "11kb8w" }],
+  ["path", { d: "M17.75 7 15 2.1", key: "12x7e8" }],
+  ["path", { d: "m4.874 14.647 2.12 4.24", key: "ccpt4b" }],
+  ["path", { d: "M5.7 21a2 2 0 0 1-3.5-2l8.6-14a6 6 0 0 1 10.4 6 2 2 0 1 1-3.464-2 2 2 0 1 0-3.464-2z", key: "u5e8z4" }],
+  ["path", { d: "m7.906 9.712 2.005 4.411", key: "1k0qph" }],
+];
+
+const CandyCane = createLucideIcon("candy-cane", iconNode);
+
+export default CandyCane;

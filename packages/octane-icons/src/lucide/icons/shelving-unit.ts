@@ -1,0 +1,19 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M12 12V9a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3", key: "wiz68x" }],
+  ["path", { d: "M16 20v-3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3", key: "1b59c4" }],
+  ["path", { d: "M20 22V2", key: "1bnhr8" }],
+  ["path", { d: "M4 12h16", key: "1lakjw" }],
+  ["path", { d: "M4 20h16", key: "14thso" }],
+  ["path", { d: "M4 2v20", key: "gtpd5x" }],
+  ["path", { d: "M4 4h16", key: "1bkgr1" }],
+];
+
+const ShelvingUnit = createLucideIcon("shelving-unit", iconNode);
+
+export default ShelvingUnit;

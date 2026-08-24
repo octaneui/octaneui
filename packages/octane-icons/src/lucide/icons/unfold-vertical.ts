@@ -1,0 +1,20 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M12 22v-6", key: "6o8u61" }],
+  ["path", { d: "M12 8V2", key: "1wkif3" }],
+  ["path", { d: "M4 12H2", key: "rhcxmi" }],
+  ["path", { d: "M10 12H8", key: "s88cx1" }],
+  ["path", { d: "M16 12h-2", key: "10asgb" }],
+  ["path", { d: "M22 12h-2", key: "14jgyd" }],
+  ["path", { d: "m15 19-3 3-3-3", key: "11eu04" }],
+  ["path", { d: "m15 5-3-3-3 3", key: "itvq4r" }],
+];
+
+const UnfoldVertical = createLucideIcon("unfold-vertical", iconNode);
+
+export default UnfoldVertical;

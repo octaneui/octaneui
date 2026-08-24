@@ -1,0 +1,17 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["circle", { cx: "19", cy: "19", r: "2", key: "17f5cg" }],
+  ["circle", { cx: "5", cy: "5", r: "2", key: "1gwv83" }],
+  ["path", { d: "M6.48 3.66a10 10 0 0 1 13.86 13.86", key: "xr8kdq" }],
+  ["path", { d: "m6.41 6.41 11.18 11.18", key: "uhpjw7" }],
+  ["path", { d: "M3.66 6.48a10 10 0 0 0 13.86 13.86", key: "cldpwv" }],
+];
+
+const Diameter = createLucideIcon("diameter", iconNode);
+
+export default Diameter;

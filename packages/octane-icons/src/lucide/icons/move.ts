@@ -1,0 +1,18 @@
+// Generated from @lucide/icons@1.33.0 by `bun run generate:lucide`.
+// Do not edit by hand — see scripts/generate-lucide.mjs.
+
+import createLucideIcon from "../createLucideIcon";
+import type { IconNode } from "../types";
+
+export const iconNode: IconNode = [
+  ["path", { d: "M12 2v20", key: "t6zp3m" }],
+  ["path", { d: "m15 19-3 3-3-3", key: "11eu04" }],
+  ["path", { d: "m19 9 3 3-3 3", key: "1mg7y2" }],
+  ["path", { d: "M2 12h20", key: "9i4pu4" }],
+  ["path", { d: "m5 9-3 3 3 3", key: "j64kie" }],
+  ["path", { d: "m9 5 3-3 3 3", key: "l8vdw6" }],
+];
+
+const Move = createLucideIcon("move", iconNode);
+
+export default Move;

@@ -1,0 +1,35 @@
+{
+  "name": "octane-icons",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Framework-native icon packages for Octane, generated from upstream icon sets.",
+  "license": "ISC",
+  "sideEffects": false,
+  "files": ["src", "README.md", "LICENSE"],
+  "main": "./src/lucide/index.ts",
+  "module": "./src/lucide/index.ts",
+  "types": "./src/lucide/index.ts",
+  "exports": {
+    "./lucide": "./src/lucide/index.ts",
+    "./lucide/dynamic": "./src/lucide/dynamic.ts",
+    "./lucide/icons/*": "./src/lucide/icons/*.ts"
+  },
+  "scripts": {
+    "generate:lucide": "node scripts/generate-lucide.mjs",
+    "generate:lucide:check": "node scripts/generate-lucide.mjs --check",
+    "typecheck": "tsrx-tsc --noEmit -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "octane": "^0.1.44"
+  },
+  "devDependencies": {
+    "@lucide/icons": "1.33.0",
+    "@octanejs/vite-plugin": "^0.1.44",
+    "@tsrx/typescript-plugin": "^0.3.124",
+    "octane": "^0.1.44",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  }
+}

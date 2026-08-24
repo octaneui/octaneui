@@ -1,0 +1,32 @@
+{
+  "name": "octane-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["src", "README.md"],
+  "main": "./src/index.tsrx",
+  "module": "./src/index.tsrx",
+  "types": "./src/index.tsrx",
+  "exports": {
+    ".": "./src/index.tsrx",
+    "./button": "./src/components/Button.tsrx",
+    "./input": "./src/components/Input.tsrx",
+    "./select": "./src/components/Select.tsrx",
+    "./styles.css": "./src/styles.css"
+  },
+  "scripts": {
+    "typecheck": "tsrx-tsc --noEmit -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "octane": "^0.1.44"
+  },
+  "devDependencies": {
+    "@octanejs/vite-plugin": "^0.1.44",
+    "@tsrx/prettier-plugin": "^0.3.124",
+    "@tsrx/typescript-plugin": "^0.3.124",
+    "octane": "^0.1.44",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  }
+}
