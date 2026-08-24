@@ -77,6 +77,23 @@ a {
   gap: 0.75rem;
   align-items: center;
 }
+.dialog-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+.dialog-copy {
+  margin: 0 0 1.15rem;
+  color: var(--text-secondary);
+}
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.dialog-actions form {
+  margin: 0;
+}
 
 .code-example {
   margin-top: 1rem;

@@ -21,6 +21,18 @@ export function Layout(props: LayoutProps) @{
       <a class="nav-link" href="/components/input">Input</a>
       <a class="nav-link" href="/components/button">Button</a>
       <a class="nav-link" href="/components/select">Select</a>
+      <a class="nav-link" href="/components/slider">Slider</a>
+      <a class="nav-link" href="/components/calendar">Calendar</a>
+      <a class="nav-link" href="/components/time">Time</a>
+      <a class="nav-link" href="/components/checkbox">Checkbox</a>
+      <a class="nav-link" href="/components/radio">Radio</a>
+      <a class="nav-link" href="/components/switch">Switch</a>
+      <a class="nav-link" href="/components/textarea">Textarea</a>
+      <a class="nav-link" href="/components/color">Color</a>
+      <a class="nav-link" href="/components/file-input">File</a>
+      <a class="nav-link" href="/components/progress">Progress</a>
+      <a class="nav-link" href="/components/disclosure">Disclosure</a>
+      <a class="nav-link" href="/components/dialog">Dialog</a>
       <a class="nav-link" href="/icons/lucide">Icons</a>
       <button
         type="button"
@@ -49,10 +61,11 @@ export function Layout(props: LayoutProps) @{
         top: 0;
         z-index: 1;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 1.25rem;
-        height: 60px;
-        padding: 0 1.5rem;
+        gap: 0.65rem 1rem;
+        min-height: 60px;
+        padding: 0.65rem 1.5rem;
         border-bottom: 1px solid var(--border);
         background: var(--header-bg);
         backdrop-filter: blur(8px);

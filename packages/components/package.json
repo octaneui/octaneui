@@ -12,6 +12,18 @@
     "./button": "./src/components/Button.tsrx",
     "./input": "./src/components/Input.tsrx",
     "./select": "./src/components/Select.tsrx",
+    "./slider": "./src/components/Slider.tsrx",
+    "./calendar": "./src/components/Calendar.tsrx",
+    "./time": "./src/components/Time.tsrx",
+    "./checkbox": "./src/components/Checkbox.tsrx",
+    "./radio": "./src/components/Radio.tsrx",
+    "./switch": "./src/components/Switch.tsrx",
+    "./textarea": "./src/components/Textarea.tsrx",
+    "./color": "./src/components/Color.tsrx",
+    "./file-input": "./src/components/FileInput.tsrx",
+    "./progress": "./src/components/Progress.tsrx",
+    "./disclosure": "./src/components/Disclosure.tsrx",
+    "./dialog": "./src/components/Dialog.tsrx",
     "./styles.css": "./src/styles.css"
   },
   "scripts": {

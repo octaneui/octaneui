@@ -24,6 +24,66 @@ export default defineConfig({
         layout: "/src/Layout.tsrx",
       }),
       new RenderRoute({
+        path: "/components/slider",
+        entry: ["SliderDocs", "/src/pages/Slider.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/calendar",
+        entry: ["CalendarDocs", "/src/pages/Calendar.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/time",
+        entry: ["TimeDocs", "/src/pages/Time.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/checkbox",
+        entry: ["CheckboxDocs", "/src/pages/Checkbox.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/radio",
+        entry: ["RadioDocs", "/src/pages/Radio.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/switch",
+        entry: ["SwitchDocs", "/src/pages/Switch.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/textarea",
+        entry: ["TextareaDocs", "/src/pages/Textarea.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/color",
+        entry: ["ColorDocs", "/src/pages/Color.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/file-input",
+        entry: ["FileInputDocs", "/src/pages/FileInput.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/progress",
+        entry: ["ProgressDocs", "/src/pages/Progress.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/disclosure",
+        entry: ["DisclosureDocs", "/src/pages/Disclosure.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/dialog",
+        entry: ["DialogDocs", "/src/pages/Dialog.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
         path: "/icons/lucide",
         entry: ["LucideIconsDocs", "/src/pages/Icons.tsrx"],
         layout: "/src/Layout.tsrx",

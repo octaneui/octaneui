@@ -2,6 +2,18 @@ const COMPONENTS = [
   { name: "Input", href: "/components/input" },
   { name: "Button", href: "/components/button" },
   { name: "Select", href: "/components/select" },
+  { name: "Slider", href: "/components/slider" },
+  { name: "Calendar", href: "/components/calendar" },
+  { name: "Time", href: "/components/time" },
+  { name: "Checkbox", href: "/components/checkbox" },
+  { name: "Radio", href: "/components/radio" },
+  { name: "Switch", href: "/components/switch" },
+  { name: "Textarea", href: "/components/textarea" },
+  { name: "Color", href: "/components/color" },
+  { name: "File input", href: "/components/file-input" },
+  { name: "Progress", href: "/components/progress" },
+  { name: "Disclosure", href: "/components/disclosure" },
+  { name: "Dialog", href: "/components/dialog" },
   { name: "Icons", href: "/icons/lucide" },
 ];
 
