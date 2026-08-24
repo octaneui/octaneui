@@ -1,4 +1,9 @@
 :root {
+  --text: #f4eee8;
+  --text-secondary: #99a1b3;
+  --accent-text: #ff5d72;
+  --border: rgba(255, 255, 255, 0.1);
+  --surface-subtle: rgba(255, 255, 255, 0.03);
   --radius: 0.625rem;
   --control-height: 2.25rem;
   --control-pad-x: 0.75rem;
@@ -22,4 +27,11 @@
   --control-accent-fg: #fff;
   --control-ring: 0 0 0 3px
     color-mix(in srgb, var(--control-accent) 30%, transparent);
+}
+.light {
+  --text: #1c2027;
+  --text-secondary: #5c6473;
+  --accent-text: #d81f38;
+  --border: rgba(0, 0, 0, 0.12);
+  --surface-subtle: rgba(0, 0, 0, 0.025);
 }
