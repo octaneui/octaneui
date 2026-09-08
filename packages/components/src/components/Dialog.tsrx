@@ -18,7 +18,7 @@ export function Dialog({ children, style, ...rest }: DialogProps) @{
         margin: auto;
         padding: 1.25rem;
         border: 1px solid var(--control-border);
-        border-radius: var(--radius, 0.625rem);
+        border-radius: var(--radius);
         background: var(--control-bg);
         color: var(--control-text);
         box-shadow: 0 0.75rem 1.75rem rgb(0 0 0 / 0.45);

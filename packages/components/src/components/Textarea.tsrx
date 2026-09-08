@@ -16,12 +16,12 @@ export function Textarea({ style, ...rest }: TextareaProps) @{
         display: flex;
         box-sizing: border-box;
         width: 100%;
-        padding: 0.5rem var(--control-pad-x, 0.75rem);
+        padding: 0.5rem var(--control-pad-x);
         border: 1px solid var(--control-border);
-        border-radius: var(--radius, 0.625rem);
+        border-radius: var(--radius);
         background: var(--control-bg);
         color: var(--control-text);
-        font-size: var(--control-font-size, 0.9375rem);
+        font-size: var(--control-font-size);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
@@ -29,12 +29,12 @@ export function Textarea({ style, ...rest }: TextareaProps) @{
       .root:hover {
         border-color: color-mix(
           in srgb,
-          var(--control-accent) 40%,
+          var(--control-strong) 40%,
           var(--control-border)
         );
       }
       .root:focus-within {
-        border-color: var(--control-accent);
+        border-color: var(--control-strong);
         box-shadow: var(--control-ring);
       }
       .root:has(.field:disabled) {
@@ -61,6 +61,7 @@ export function Textarea({ style, ...rest }: TextareaProps) @{
       }
       .field:disabled {
         resize: none;
+        pointer-events: none;
       }
     </style>
   </div>

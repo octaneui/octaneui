@@ -29,6 +29,9 @@
   "scripts": {
     "typecheck": "tsrx-tsc --noEmit -p tsconfig.json"
   },
+  "dependencies": {
+    "octane-icons": "workspace:*"
+  },
   "peerDependencies": {
     "octane": "^0.1.44"
   },

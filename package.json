@@ -11,7 +11,7 @@
     "typecheck": "bun run --filter '*' typecheck"
   },
   "devDependencies": {
-    "@tsrx/prettier-plugin": "^0.3.124",
+    "@tsrx/prettier-plugin": "^0.3.135",
     "prettier": "^3.9.6"
   }
 }

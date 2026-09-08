@@ -36,30 +36,27 @@ export function Button({
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: var(--control-gap, 0.5rem);
+        gap: var(--control-gap);
         box-sizing: border-box;
-        min-height: var(--control-height, 2.25rem);
-        padding: 0 var(--control-pad-x, 0.75rem);
-        border: 1px solid transparent;
-        border-radius: var(--radius, 0.625rem);
+        min-height: var(--control-height);
+        padding: 0 var(--control-pad-x);
+        border: 1px solid var(--control-border);
+        border-radius: var(--radius);
         background: var(--control-accent);
-        color: var(--control-accent-fg, #fff);
+        color: var(--control-accent-fg);
         font-family: inherit;
-        font-size: var(--control-font-size, 0.9375rem);
+        font-size: var(--control-font-size);
         font-weight: 600;
         line-height: 1;
         cursor: pointer;
         user-select: none;
         appearance: none;
         transition:
-          filter 0.15s ease,
+          background 0.15s ease,
           box-shadow 0.15s ease;
       }
       .root:hover:not(:disabled) {
-        filter: brightness(1.08);
-      }
-      .root:active:not(:disabled) {
-        filter: brightness(0.95);
+        background: var(--control-accent-hover);
       }
       .root:focus-visible {
         outline: none;

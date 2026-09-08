@@ -23,9 +23,9 @@ export function Switch({ children, style, ...rest }: SwitchProps) @{
         position: relative;
         display: inline-flex;
         align-items: center;
-        gap: var(--control-gap, 0.5rem);
+        gap: var(--control-gap);
         color: var(--control-text);
-        font-size: var(--control-font-size, 0.9375rem);
+        font-size: var(--control-font-size);
         line-height: 1.3;
         cursor: pointer;
         user-select: none;
@@ -66,11 +66,11 @@ export function Switch({ children, style, ...rest }: SwitchProps) @{
         width: 1.25rem;
         height: 1.25rem;
         border-radius: 50%;
-        background: var(--control-accent-fg, #fff);
+        background: var(--control-bg);
         transition: translate 0.15s ease;
       }
       .field:checked + .track {
-        background: var(--control-accent);
+        background: var(--control-accent-color);
       }
       .field:checked + .track::before {
         translate: 1rem 0;

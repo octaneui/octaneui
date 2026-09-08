@@ -17,11 +17,11 @@ export function Color({ style, ...rest }: ColorProps) @{
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-        width: var(--control-height, 2.25rem);
-        height: var(--control-height, 2.25rem);
+        width: var(--control-height);
+        height: var(--control-height);
         padding: 0.25rem;
         border: 1px solid var(--control-border);
-        border-radius: var(--radius, 0.625rem);
+        border-radius: var(--radius);
         background: var(--control-bg);
         transition:
           border-color 0.15s ease,
@@ -61,11 +61,11 @@ export function Color({ style, ...rest }: ColorProps) @{
       }
       .field::-webkit-color-swatch {
         border: 0;
-        border-radius: calc(var(--radius, 0.625rem) - 0.35rem);
+        border-radius: calc(var(--radius) - 0.35rem);
       }
       .field::-moz-color-swatch {
         border: 0;
-        border-radius: calc(var(--radius, 0.625rem) - 0.35rem);
+        border-radius: calc(var(--radius) - 0.35rem);
       }
     </style>
   </div>

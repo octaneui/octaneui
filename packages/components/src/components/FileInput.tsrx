@@ -21,16 +21,16 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
       .root {
         display: flex;
         align-items: center;
-        gap: var(--control-gap, 0.5rem);
+        gap: var(--control-gap);
         box-sizing: border-box;
         width: 100%;
-        min-height: var(--control-height, 2.25rem);
-        padding-right: var(--control-pad-x, 0.75rem);
+        min-height: var(--control-height);
+        padding-right: var(--control-pad-x);
         border: 1px solid var(--control-border);
-        border-radius: var(--radius, 0.625rem);
+        border-radius: var(--radius);
         background: var(--control-bg);
         color: var(--control-text);
-        font-size: var(--control-font-size, 0.9375rem);
+        font-size: var(--control-font-size);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
@@ -67,9 +67,9 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
         cursor: not-allowed;
       }
       .field::file-selector-button {
-        height: var(--control-height, 2.25rem);
-        margin-right: var(--control-gap, 0.5rem);
-        padding: 0 var(--control-pad-x, 0.75rem);
+        height: var(--control-height);
+        margin-right: var(--control-gap);
+        padding: 0 var(--control-pad-x);
         border: 0;
         border-right: 1px solid var(--control-border);
         background: color-mix(in srgb, CanvasText 6%, transparent);
@@ -86,8 +86,8 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        margin-left: var(--control-pad-x, 0.75rem);
-        color: var(--control-muted);
+        margin-left: var(--control-pad-x);
+        color: var(--control-text);
         line-height: 1;
         pointer-events: none;
       }

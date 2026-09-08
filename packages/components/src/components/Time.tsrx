@@ -22,16 +22,16 @@ export function Time({ left, style, ...rest }: TimeProps) @{
         --time-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cpath fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' d='M8 5v3.5L10 11'/%3E%3C/svg%3E");
         display: flex;
         align-items: center;
-        gap: var(--control-gap, 0.5rem);
+        gap: var(--control-gap);
         box-sizing: border-box;
         width: 100%;
-        min-height: var(--control-height, 2.25rem);
-        padding: 0 var(--control-pad-x, 0.75rem);
+        min-height: var(--control-height);
+        padding: 0 var(--control-pad-x);
         border: 1px solid var(--control-border);
-        border-radius: var(--radius, 0.625rem);
+        border-radius: var(--radius);
         background: var(--control-bg);
         color: var(--control-text);
-        font-size: var(--control-font-size, 0.9375rem);
+        font-size: var(--control-font-size);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
@@ -39,12 +39,12 @@ export function Time({ left, style, ...rest }: TimeProps) @{
       .root:hover {
         border-color: color-mix(
           in srgb,
-          var(--control-accent) 40%,
+          var(--control-strong) 40%,
           var(--control-border)
         );
       }
       .root:focus-within {
-        border-color: var(--control-accent);
+        border-color: var(--control-strong);
         box-shadow: var(--control-ring);
       }
       .root:has(.field:disabled) {
@@ -55,7 +55,7 @@ export function Time({ left, style, ...rest }: TimeProps) @{
         flex: 1;
         min-width: 0;
         width: 100%;
-        height: var(--control-height, 2.25rem);
+        height: var(--control-height);
         margin: 0;
         padding: 0;
         border: 0;
@@ -75,7 +75,7 @@ export function Time({ left, style, ...rest }: TimeProps) @{
         padding: 0;
         cursor: pointer;
         background: none;
-        background-color: var(--control-muted);
+        background-color: var(--control-text);
         mask: var(--time-icon) center / 1rem no-repeat;
       }
       .slot {
@@ -83,7 +83,7 @@ export function Time({ left, style, ...rest }: TimeProps) @{
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        color: var(--control-muted);
+        color: var(--control-text);
         line-height: 1;
         pointer-events: none;
       }

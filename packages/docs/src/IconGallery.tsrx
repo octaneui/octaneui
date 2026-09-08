@@ -97,7 +97,7 @@ export function IconGallery() @{
         min-height: 2.5rem;
         padding: 0 0.875rem;
         border: 1px solid var(--border);
-        border-radius: var(--radius, 0.625rem);
+        border-radius: var(--radius);
         background: var(--surface-subtle);
         color: var(--text);
         font-family: inherit;
@@ -128,7 +128,7 @@ export function IconGallery() @{
         gap: 0.5rem;
         padding: 1rem 0.75rem;
         border: 1px solid var(--border);
-        border-radius: var(--radius, 0.625rem);
+        border-radius: var(--radius);
         background: var(--surface-subtle);
         text-align: center;
       }
@@ -148,7 +148,7 @@ export function IconGallery() @{
       .gallery-copy {
         padding: 0.3rem 0.6rem;
         border: 1px solid var(--border);
-        border-radius: calc(var(--radius, 0.625rem) - 0.2rem);
+        border-radius: calc(var(--radius) - 0.2rem);
         background: transparent;
         color: var(--text);
         font-family: inherit;

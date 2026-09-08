@@ -5,13 +5,16 @@
     "": {
       "name": "octane-ui",
       "devDependencies": {
-        "@tsrx/prettier-plugin": "^0.3.124",
+        "@tsrx/prettier-plugin": "^0.3.135",
         "prettier": "^3.9.6",
       },
     },
     "packages/components": {
       "name": "octane-ui",
       "version": "0.0.0",
+      "dependencies": {
+        "octane-icons": "workspace:*",
+      },
       "devDependencies": {
         "@octanejs/vite-plugin": "^0.1.44",
         "@tsrx/prettier-plugin": "^0.3.124",
@@ -282,11 +285,11 @@
 
     "@sveltejs/acorn-typescript": ["@sveltejs/acorn-typescript@1.0.13", "", { "peerDependencies": { "acorn": "^8.9.0" } }, "sha512-wgKggnhZVL9Bfx1OaKKTrYY9BFRk6C8UAkQNUcIv1+llzYrIqy+RZm5HPKzn0NpEBvTVhTqB4kQyllZywsRBRQ=="],
 
-    "@tsrx/core": ["@tsrx/core@0.1.60", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5", "@noble/hashes": "^2.2.0", "@sveltejs/acorn-typescript": "^1.0.13", "@tsrx/runtime": "0.1.1", "@types/estree": "^1.0.8", "@types/estree-jsx": "^1.0.5", "acorn": "^8.17.0", "esrap": "^2.3.2", "is-reference": "^3.0.3", "magic-string": "^0.30.18", "zimmerframe": "^1.1.2" } }, "sha512-t/lb8wWrJUsiwGTz3NI2GqF5be9kojmemfur6SdJqhbrMccx8TkHtZh6N8mE9gh2PTiGPuNf6HTZIomOpamA7Q=="],
+    "@tsrx/core": ["@tsrx/core@0.1.69", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5", "@noble/hashes": "^2.2.0", "@sveltejs/acorn-typescript": "^1.0.13", "@tsrx/runtime": "0.1.6", "@types/estree": "^1.0.8", "@types/estree-jsx": "^1.0.5", "acorn": "^8.17.0", "esrap": "^2.3.2", "magic-string": "^0.30.18", "zimmerframe": "^1.1.2" } }, "sha512-8iMLyFUHFPKAkNtHASasYnXTF/kqkO3/n42yTW83CqndWhTyxbxw2O92EFrDlL8ewTjQ+QWueuQUePes0EM0rQ=="],
 
-    "@tsrx/prettier-plugin": ["@tsrx/prettier-plugin@0.3.124", "", { "dependencies": { "@tsrx/core": "0.1.60" }, "peerDependencies": { "prettier": ">=2.0.0" } }, "sha512-84bZ8Hu7rcirhDDcBm0oPvIvL/22T4UiYeqkn1/BnWvjf0vtYqNtjUszZDty8zhpt5fCLxF3oGYfkFl/eE5scw=="],
+    "@tsrx/prettier-plugin": ["@tsrx/prettier-plugin@0.3.135", "", { "dependencies": { "@tsrx/core": "0.1.69" }, "peerDependencies": { "prettier": ">=2.0.0" } }, "sha512-vr3B3Qqu0X8Lp803qdS0UKZhCaZHYeMo4sraEx2DGszk8jJUZy+JwF6Yq9hs6Y5lFIRP1Ejs7Te0NsmBOF6kdQ=="],
 
-    "@tsrx/runtime": ["@tsrx/runtime@0.1.1", "", {}, "sha512-R7n2forc2XQvqCYpYMqGij1tCwoPILBubRczQ2Kbjj3d6naiseEq6qfMmljEkKp14ERYHstx7ISrw2wY7Ml0DA=="],
+    "@tsrx/runtime": ["@tsrx/runtime@0.1.6", "", {}, "sha512-JDqwh1anI9roESDnT7uP2oreBhr8ZQdd1zc0f2Ec4VCW/l7oWGHhFD39huISRoFbUEqJbip56dJ+Zc9iiG2CDQ=="],
 
     "@tsrx/typescript-plugin": ["@tsrx/typescript-plugin@0.3.124", "", { "dependencies": { "@volar/language-core": "~2.4.28", "@volar/typescript": "~2.4.28" }, "peerDependencies": { "@tsrx/preact": "0.1.60", "@tsrx/react": "0.2.60", "@tsrx/ripple": "0.1.61", "@tsrx/solid": "0.1.60", "@tsrx/vue": "0.1.60", "octane": "*", "typescript": "^5.9.3" }, "optionalPeers": ["@tsrx/preact", "@tsrx/react", "@tsrx/ripple", "@tsrx/solid", "@tsrx/vue", "octane"], "bin": { "tsrx-tsc": "./dist/tsc.js" } }, "sha512-GCzbAVuRTZOps+0vDVEf5whLjQkNpucVYoXgwPWN6G9NZuU8lSvJriFqoOW6h4cwsj1OSYSpU2nFk1O8doXlPQ=="],
 
@@ -512,6 +515,10 @@
 
     "zwitch": ["zwitch@2.0.4", "", {}, "sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A=="],
 
+    "octane/@tsrx/core": ["@tsrx/core@0.1.60", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5", "@noble/hashes": "^2.2.0", "@sveltejs/acorn-typescript": "^1.0.13", "@tsrx/runtime": "0.1.1", "@types/estree": "^1.0.8", "@types/estree-jsx": "^1.0.5", "acorn": "^8.17.0", "esrap": "^2.3.2", "is-reference": "^3.0.3", "magic-string": "^0.30.18", "zimmerframe": "^1.1.2" } }, "sha512-t/lb8wWrJUsiwGTz3NI2GqF5be9kojmemfur6SdJqhbrMccx8TkHtZh6N8mE9gh2PTiGPuNf6HTZIomOpamA7Q=="],
+
     "rolldown/@oxc-project/types": ["@oxc-project/types@0.146.0", "", {}, "sha512-XC0QsnnhVe7sLIWmYmdPw7x5P0h4W8vUU3Nv1ySgWXtvCz8NizoAEpGXA0sOYoJQV2Rl13LgURAHQ5cI5ILCSA=="],
+
+    "octane/@tsrx/core/@tsrx/runtime": ["@tsrx/runtime@0.1.1", "", {}, "sha512-R7n2forc2XQvqCYpYMqGij1tCwoPILBubRczQ2Kbjj3d6naiseEq6qfMmljEkKp14ERYHstx7ISrw2wY7Ml0DA=="],
   }
 }

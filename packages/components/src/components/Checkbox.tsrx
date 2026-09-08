@@ -1,5 +1,6 @@
 import type { OctaneNode } from "octane";
 import type { Octane } from "octane/jsx-runtime";
+import { Check } from "octane-icons/lucide";
 
 type CheckboxNativeProps = Omit<
   Octane.InputHTMLAttributes<HTMLInputElement>,
@@ -13,20 +14,23 @@ export interface CheckboxProps extends CheckboxNativeProps {
 export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
   <label class={["root", rest.class]} style={style}>
     <input {...rest} type="checkbox" class="field" />
-    <span class="box" aria-hidden="true" />
+    <span class="box" aria-hidden="true">
+      <span class="check">
+        <Check size={12} strokeWidth={3} />
+      </span>
+    </span>
     @if (children) {
       <span class="label">{children}</span>
     }
 
     <style>
       .root {
-        --check-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-6'/%3E%3C/svg%3E");
         position: relative;
         display: inline-flex;
         align-items: center;
-        gap: var(--control-gap, 0.5rem);
+        gap: var(--control-gap);
         color: var(--control-text);
-        font-size: var(--control-font-size, 0.9375rem);
+        font-size: var(--control-font-size);
         line-height: 1.3;
         cursor: pointer;
         user-select: none;
@@ -62,29 +66,35 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
+      .check {
+        display: flex;
+        color: var(--control-accent-fg);
+        opacity: 0;
+        pointer-events: none;
+      }
       .field:checked + .box {
-        border-color: var(--control-accent);
         background: var(--control-accent);
-        background-image: var(--check-icon);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 0.75rem;
+      }
+      .field:checked + .box .check {
+        opacity: 1;
       }
       .field:indeterminate + .box {
-        border-color: var(--control-accent);
         background: var(--control-accent);
+      }
+      .field:indeterminate + .box .check {
+        opacity: 0;
       }
       .field:indeterminate + .box::after {
         content: "";
         width: 0.55rem;
         height: 0.125rem;
         border-radius: 999px;
-        background: var(--control-accent-fg, #fff);
+        background: var(--control-accent-fg);
       }
       .root:hover .field:not(:disabled) + .box {
         border-color: color-mix(
           in srgb,
-          var(--control-accent) 40%,
+          var(--control-strong) 40%,
           var(--control-border)
         );
       }

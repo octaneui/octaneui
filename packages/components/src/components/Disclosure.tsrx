@@ -26,17 +26,17 @@ export function Disclosure({
         box-sizing: border-box;
         width: 100%;
         border: 1px solid var(--control-border);
-        border-radius: var(--radius, 0.625rem);
+        border-radius: var(--radius);
         background: var(--control-bg);
         color: var(--control-text);
       }
       .summary {
         display: flex;
         align-items: center;
-        gap: var(--control-gap, 0.5rem);
-        min-height: var(--control-height, 2.25rem);
-        padding: 0.35rem var(--control-pad-x, 0.75rem);
-        font-size: var(--control-font-size, 0.9375rem);
+        gap: var(--control-gap);
+        min-height: var(--control-height);
+        padding: 0.35rem var(--control-pad-x);
+        font-size: var(--control-font-size);
         font-weight: 600;
         cursor: pointer;
         list-style: none;
@@ -50,7 +50,7 @@ export function Disclosure({
         flex-shrink: 0;
         width: 1rem;
         height: 1rem;
-        background-color: var(--control-muted);
+        background-color: var(--control-text);
         mask: var(--disclosure-chevron) center / 1rem no-repeat;
         transition: rotate 0.15s ease;
       }
@@ -63,9 +63,9 @@ export function Disclosure({
         border-radius: inherit;
       }
       .body {
-        padding: 0 var(--control-pad-x, 0.75rem) 0.85rem;
-        color: var(--control-muted);
-        font-size: var(--control-font-size, 0.9375rem);
+        padding: 0 var(--control-pad-x) 0.85rem;
+        color: var(--text-secondary);
+        font-size: var(--control-font-size);
         line-height: 1.5;
       }
     </style>

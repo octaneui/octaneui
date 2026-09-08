@@ -18,7 +18,7 @@ export function Progress({ style, ...rest }: ProgressProps) @{
         border: 0;
         border-radius: 999px;
         background: var(--control-border);
-        accent-color: var(--control-accent);
+        accent-color: var(--control-accent-color);
         overflow: hidden;
         vertical-align: middle;
         appearance: none;
@@ -28,11 +28,11 @@ export function Progress({ style, ...rest }: ProgressProps) @{
         border-radius: 999px;
       }
       .root::-webkit-progress-value {
-        background: var(--control-accent);
+        background: var(--control-accent-color);
         border-radius: 999px;
       }
       .root::-moz-progress-bar {
-        background: var(--control-accent);
+        background: var(--control-accent-color);
         border-radius: 999px;
       }
       .root:indeterminate::-webkit-progress-bar {

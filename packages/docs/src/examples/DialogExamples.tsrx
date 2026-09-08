@@ -14,10 +14,10 @@ export function DialogExamples() @{
       </p>
       <div class="dialog-actions">
         <form method="dialog">
-          <Button>Cancel</Button>
+          <Button type="submit">Cancel</Button>
         </form>
         <form method="dialog">
-          <Button>Discard</Button>
+          <Button type="submit">Discard</Button>
         </form>
       </div>
     </Dialog>

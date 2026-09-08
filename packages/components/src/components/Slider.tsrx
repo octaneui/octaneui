@@ -17,7 +17,7 @@ export function Slider({ style, ...rest }: SliderProps) @{
         align-items: center;
         box-sizing: border-box;
         width: 100%;
-        min-height: var(--control-height, 2.25rem);
+        min-height: var(--control-height);
         color: var(--control-text);
       }
       .root:has(.field:disabled) {
@@ -50,33 +50,33 @@ export function Slider({ style, ...rest }: SliderProps) @{
         height: 0.375rem;
         border: 0;
         border-radius: 999px;
-        background: var(--control-border);
+        background: var(--control-muted);
       }
       .field::-webkit-slider-thumb {
         appearance: none;
         width: 1.125rem;
         height: 1.125rem;
         margin-top: -0.375rem;
-        border: 0;
+        border: 1px solid var(--control-border);
         border-radius: 50%;
         background: var(--control-accent);
       }
       .field::-moz-range-track {
         height: 0.375rem;
-        border: 0;
+        border: 1px solid var(--control-border);
         border-radius: 999px;
-        background: var(--control-border);
+        background: var(--control-muted);
       }
       .field::-moz-range-progress {
         height: 0.375rem;
-        border: 0;
+        border: 1px solid var(--control-border);
         border-radius: 999px;
         background: var(--control-accent);
       }
       .field::-moz-range-thumb {
         width: 1.125rem;
         height: 1.125rem;
-        border: 0;
+        border: 1px solid var(--control-border);
         border-radius: 50%;
         background: var(--control-accent);
       }
@@ -85,7 +85,7 @@ export function Slider({ style, ...rest }: SliderProps) @{
           height: 0.375rem;
           border: 0;
           border-radius: 999px;
-          background: var(--control-border);
+          background: var(--control-muted);
         }
         .field::slider-fill {
           background: var(--control-accent);

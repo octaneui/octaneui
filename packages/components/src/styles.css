@@ -1,37 +1,47 @@
 :root {
-  --text: #f4eee8;
-  --text-secondary: #99a1b3;
-  --accent-text: #ff5d72;
-  --border: rgba(255, 255, 255, 0.1);
-  --surface-subtle: rgba(255, 255, 255, 0.03);
   --radius: 0.625rem;
   --control-height: 2.25rem;
   --control-pad-x: 0.75rem;
   --control-gap: 0.5rem;
   --control-font-size: 0.9375rem;
-  --control-bg: var(
-    --surface-subtle,
-    color-mix(in srgb, CanvasText 4%, Canvas)
-  );
-  --control-picker-bg: color-mix(in srgb, CanvasText 6%, Canvas);
-  --control-border: var(
-    --border,
-    color-mix(in srgb, CanvasText 12%, transparent)
-  );
-  --control-text: var(--text, CanvasText);
-  --control-muted: var(
-    --text-secondary,
-    color-mix(in srgb, CanvasText 55%, Canvas)
-  );
-  --control-accent: var(--accent-text, #ff5d72);
-  --control-accent-fg: #fff;
-  --control-ring: 0 0 0 3px
-    color-mix(in srgb, var(--control-accent) 30%, transparent);
+  --control-accent-color: #2f6feb;
+  --control-accent-color-hover: #255bc4;
 }
+
+:root {
+  --bg: #010204;
+  --text: #f4eee8;
+  --text-secondary: #8c8c8c;
+  --accent-text: #fff;
+  --border: #24262c;
+  --surface-subtle: rgba(255, 255, 255, 0.03);
+  --control-bg: #101114;
+  --control-picker-bg: #101114;
+  --control-border: #24262c;
+  --control-text: #f4eee8;
+  --control-muted: #8f8f8f;
+  --control-accent: #fff;
+  --control-accent-hover: #e6e6e6;
+  --control-accent-fg: #000;
+  --control-strong: #f4eee8;
+  --control-ring: 0 0 0 3px #ffffff30;
+}
+
 .light {
-  --text: #1c2027;
-  --text-secondary: #5c6473;
-  --accent-text: #d81f38;
-  --border: rgba(0, 0, 0, 0.12);
-  --surface-subtle: rgba(0, 0, 0, 0.025);
+  --bg: #fff;
+  --text: #242424;
+  --text-secondary: #7e7e7e;
+  --accent-text: #474747;
+  --border: #cdcdcd;
+  --surface-subtle: rgba(255, 255, 255, 0.03);
+  --control-bg: #fff;
+  --control-picker-bg: #fff;
+  --control-border: #cdcdcd;
+  --control-text: #242424;
+  --control-muted: #d9d9d9;
+  --control-accent: #fff;
+  --control-accent-hover: #f1f1f1;
+  --control-accent-fg: #242424;
+  --control-strong: #242424;
+  --control-ring: 0 0 0 3px #d4d4d420;
 }

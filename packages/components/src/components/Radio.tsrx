@@ -32,9 +32,9 @@ export function Radio({ children, style, ...rest }: RadioProps) @{
         position: relative;
         display: inline-flex;
         align-items: center;
-        gap: var(--control-gap, 0.5rem);
+        gap: var(--control-gap);
         color: var(--control-text);
-        font-size: var(--control-font-size, 0.9375rem);
+        font-size: var(--control-font-size);
         line-height: 1.3;
         cursor: pointer;
         user-select: none;
@@ -74,15 +74,12 @@ export function Radio({ children, style, ...rest }: RadioProps) @{
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 50%;
-        background: var(--control-accent);
-      }
-      .field:checked + .box {
-        border-color: var(--control-accent);
+        background: var(--control-accent-color);
       }
       .root:hover .field:not(:disabled) + .box {
         border-color: color-mix(
           in srgb,
-          var(--control-accent) 40%,
+          var(--control-strong) 40%,
           var(--control-border)
         );
       }
@@ -116,7 +113,7 @@ export function RadioGroup({
         padding: 0;
         margin-bottom: 0.5rem;
         color: var(--control-text);
-        font-size: var(--control-font-size, 0.9375rem);
+        font-size: var(--control-font-size);
         font-weight: 600;
       }
       .options {
