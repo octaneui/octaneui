@@ -17,26 +17,26 @@ export function Progress({ style, ...rest }: ProgressProps) @{
         height: 0.5rem;
         border: 0;
         border-radius: 999px;
-        background: var(--control-border);
-        accent-color: var(--control-accent-color);
+        background: var(--control-track-background);
+        accent-color: var(--control-accent);
         overflow: hidden;
         vertical-align: middle;
         appearance: none;
       }
       .root::-webkit-progress-bar {
-        background: var(--control-border);
+        background: var(--control-track-background);
         border-radius: 999px;
       }
       .root::-webkit-progress-value {
-        background: var(--control-accent-color);
+        background: var(--control-accent);
         border-radius: 999px;
       }
       .root::-moz-progress-bar {
-        background: var(--control-accent-color);
+        background: var(--control-accent);
         border-radius: 999px;
       }
       .root:indeterminate::-webkit-progress-bar {
-        background: var(--control-border);
+        background: var(--control-track-background);
       }
     </style>
   </progress>

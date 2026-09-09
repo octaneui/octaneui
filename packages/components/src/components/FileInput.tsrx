@@ -21,30 +21,25 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
       .root {
         display: flex;
         align-items: center;
-        gap: var(--control-gap);
         box-sizing: border-box;
         width: 100%;
         min-height: var(--control-height);
-        padding-right: var(--control-pad-x);
+        padding-inline-end: var(--control-padding-inline);
         border: 1px solid var(--control-border);
-        border-radius: var(--radius);
-        background: var(--control-bg);
-        color: var(--control-text);
+        border-radius: var(--border-radius);
+        background: var(--control-background);
+        color: var(--control-text-primary);
         font-size: var(--control-font-size);
+        overflow: hidden;
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
-      .root:hover {
-        border-color: color-mix(
-          in srgb,
-          var(--control-accent) 40%,
-          var(--control-border)
-        );
+      .root:not(:has(.field:focus-visible)):has(.field:enabled):hover {
+        border-color: var(--control-border-hover);
       }
-      .root:focus-within {
-        border-color: var(--control-accent);
-        box-shadow: var(--control-ring);
+      .root:has(.field:focus-visible) {
+        border-color: var(--control-border-focus);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -69,10 +64,12 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
       .field::file-selector-button {
         height: var(--control-height);
         margin-right: var(--control-gap);
-        padding: 0 var(--control-pad-x);
+        padding-block: 0;
+        padding-inline: var(--control-padding-inline);
         border: 0;
+        border-radius: 0;
         border-right: 1px solid var(--control-border);
-        background: color-mix(in srgb, CanvasText 6%, transparent);
+        background: var(--file-selector-button-background);
         color: inherit;
         font: inherit;
         font-weight: 600;
@@ -86,8 +83,11 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        margin-left: var(--control-pad-x);
-        color: var(--control-text);
+        align-self: stretch;
+        height: var(--control-height);
+        padding-inline-start: var(--control-padding-inline);
+        background: var(--file-selector-button-background);
+        color: var(--control-text-primary);
         line-height: 1;
         pointer-events: none;
       }

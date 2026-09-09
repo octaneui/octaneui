@@ -26,33 +26,29 @@ export function Select({
 
     <style>
       .root {
-        --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+        --select-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
         display: flex;
         align-items: center;
         gap: var(--control-gap);
         box-sizing: border-box;
         width: 100%;
         min-height: var(--control-height);
-        padding: 0 var(--control-pad-x);
+        padding-block: 0;
+        padding-inline: var(--control-padding-inline);
         border: 1px solid var(--control-border);
-        border-radius: var(--radius);
-        background: var(--control-bg);
-        color: var(--control-text);
+        border-radius: var(--border-radius);
+        background: var(--control-background);
+        color: var(--control-text-primary);
         font-size: var(--control-font-size);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
-      .root:hover {
-        border-color: color-mix(
-          in srgb,
-          var(--control-strong) 40%,
-          var(--control-border)
-        );
+      .root:not(:has(.field:focus-visible)):has(.field:enabled):hover {
+        border-color: var(--control-border-hover);
       }
-      .root:focus-within {
-        border-color: var(--control-strong);
-        box-shadow: var(--control-ring);
+      .root:has(.field:focus-visible) {
+        border-color: var(--control-border-focus);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -81,7 +77,7 @@ export function Select({
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        color: var(--control-text);
+        color: var(--control-text-primary);
         line-height: 1;
         pointer-events: none;
       }
@@ -97,8 +93,8 @@ export function Select({
         flex-shrink: 0;
         width: 1rem;
         height: 1rem;
-        background-color: var(--control-text);
-        mask: var(--select-chevron) center / 1rem no-repeat;
+        background-color: var(--control-text-primary);
+        mask: var(--select-icon) center / 1rem no-repeat;
         pointer-events: none;
       }
 
@@ -120,8 +116,8 @@ export function Select({
           width: 1rem;
           height: 1rem;
           margin-inline-start: auto;
-          background-color: var(--control-text);
-          mask: var(--select-chevron) center / 1rem no-repeat;
+          background-color: var(--control-text-primary);
+          mask: var(--select-icon) center / 1rem no-repeat;
           transition: rotate 0.15s ease;
         }
         .field:open::picker-icon {
@@ -132,9 +128,9 @@ export function Select({
           margin: 0;
           padding: 0.25rem;
           border: 1px solid var(--control-border);
-          border-radius: var(--radius);
-          background: var(--control-picker-bg);
-          color: var(--control-text);
+          border-radius: var(--border-radius);
+          background: var(--select-picker-background);
+          color: var(--control-text-primary);
           font: inherit;
           min-width: anchor-size(width);
           max-height: min(20rem, 70vh);
@@ -160,25 +156,35 @@ export function Select({
             translate: 0 -0.25rem;
           }
         }
+        .field :global(optgroup) {
+          background: transparent;
+          /* Affects the optgroup label as .field :global(option) is more specific
+          for the actual option text. */
+          color: var(--control-text-secondary);
+          font: inherit;
+          font-style: normal;
+        }
         .field :global(option) {
           display: flex;
           align-items: center;
           gap: var(--control-gap);
           padding: 0.5rem 0.625rem;
           border: 0;
-          border-radius: calc(var(--radius) - 0.125rem);
+          border-radius: calc(var(--border-radius) - 0.125rem);
           background: transparent;
-          color: inherit;
+          color: var(--control-text-primary);
           font: inherit;
+          font-style: normal;
+          font-weight: normal;
           white-space: nowrap;
           cursor: pointer;
         }
-        .field :global(option:hover),
+        .field :global(option:not(:disabled):hover),
         .field :global(option:focus),
         .field :global(option:checked),
         .field :global(option:checked:hover),
         .field :global(option:checked:focus) {
-          background: var(--control-accent-hover);
+          background: var(--control-background-active);
         }
         .field :global(option:disabled) {
           opacity: 0.5;
@@ -187,13 +193,7 @@ export function Select({
         .field :global(option)::checkmark {
           order: 1;
           margin-inline-start: auto;
-          color: var(--control-accent-hover);
-        }
-        .field :global(optgroup) {
-          background: transparent;
-          color: var(--text-primary);
-          font: inherit;
-          font-style: normal;
+          color: var(--control-text-primary);
         }
       }
     </style>

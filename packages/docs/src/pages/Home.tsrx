@@ -56,15 +56,15 @@ export function Home() @{
       .link {
         display: block;
         padding: 1rem;
-        border: 1px solid var(--border);
+        border: 1px solid var(--border-color);
         border-radius: 0.9rem;
-        background: var(--surface-subtle);
-        color: var(--text);
+        background: var(--surface-background);
+        color: var(--text-primary);
         font-weight: 600;
       }
       .link:hover {
-        border-color: var(--card-hover-border);
-        background: var(--card-hover-bg);
+        border-color: var(--surface-background-hover);
+        background: var(--surface-background-hover);
       }
     </style>
   </section>

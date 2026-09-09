@@ -29,7 +29,7 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
         display: inline-flex;
         align-items: center;
         gap: var(--control-gap);
-        color: var(--control-text);
+        color: var(--control-text-primary);
         font-size: var(--control-font-size);
         line-height: 1.3;
         cursor: pointer;
@@ -60,7 +60,7 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
         height: 1.125rem;
         border: 1px solid var(--control-border);
         border-radius: 0.35rem;
-        background: var(--control-bg);
+        background: var(--control-background);
         transition:
           background 0.15s ease,
           border-color 0.15s ease,
@@ -68,7 +68,7 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
       }
       .check {
         display: flex;
-        color: var(--control-accent-fg);
+        color: var(--control-accent-text);
         opacity: 0;
         pointer-events: none;
       }
@@ -89,17 +89,13 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
         width: 0.55rem;
         height: 0.125rem;
         border-radius: 999px;
-        background: var(--control-accent-fg);
+        background: var(--control-accent-text);
       }
-      .root:hover .field:not(:disabled) + .box {
-        border-color: color-mix(
-          in srgb,
-          var(--control-strong) 40%,
-          var(--control-border)
-        );
+      .root:not(:has(.field:focus-visible)):has(.field:enabled):hover .field:not(:checked) + .box {
+        border-color: var(--control-border-hover);
       }
-      .field:focus-visible + .box {
-        box-shadow: var(--control-ring);
+      .root:has(.field:focus-visible) .box {
+        outline: 1px solid var(--control-accent);
       }
     </style>
   </label>

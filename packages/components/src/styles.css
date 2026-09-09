@@ -1,47 +1,80 @@
 :root {
-  --radius: 0.625rem;
-  --control-height: 2.25rem;
-  --control-pad-x: 0.75rem;
+  /* Shared geometry and typography. */
+  --border-radius: 0.625rem;
+  --control-height: 2.75rem;
+  --control-padding-inline: 0.75rem;
   --control-gap: 0.5rem;
   --control-font-size: 0.9375rem;
-  --control-accent-color: #2f6feb;
-  --control-accent-color-hover: #255bc4;
 }
 
 :root {
-  --bg: #010204;
-  --text: #f4eee8;
+  /* Selection and progress. Text is drawn on the accent background. */
+  --control-accent: #2f6feb;
+  --control-accent-text: #fff;
+
+  /* Page surfaces and content. */
+  --page-background: #16181c;
+  --text-primary: #d8dade;
   --text-secondary: #8c8c8c;
-  --accent-text: #fff;
-  --border: #24262c;
-  --surface-subtle: rgba(255, 255, 255, 0.03);
-  --control-bg: #101114;
-  --control-picker-bg: #101114;
-  --control-border: #24262c;
-  --control-text: #f4eee8;
-  --control-muted: #8f8f8f;
-  --control-accent: #fff;
-  --control-accent-hover: #e6e6e6;
-  --control-accent-fg: #000;
-  --control-strong: #f4eee8;
-  --control-ring: 0 0 0 3px #ffffff30;
+  --text-link: #fff;
+  --border-color: #24262c;
+  --surface-background: rgba(255, 255, 255, 0.03);
+  --surface-background-hover: #303134;
+
+  /* Shared control surfaces, content, and interaction states. */
+  --control-background: #151619;
+  --control-background-active: #303134;
+  --control-border: #323334;
+  --control-border-hover: #404347;
+  --control-border-focus: #2f6feb;
+  --control-text-primary: #d8dade;
+  --control-text-secondary: #676767;
+  --control-placeholder-text: #47484b;
+  --control-track-background: #303134;
+  --control-thumb-background: #fff;
+  /* A complete box-shadow value for keyboard/input focus. */
+  --control-focus-shadow: 0 0 0 3px #ffffff30;
+
+  /* Component-specific surfaces. */
+  --button-background: #fff;
+  --button-background-hover: #e8e8e8;
+  --button-text: #000;
+  --select-picker-background: #101114;
+  --file-selector-button-background: #191a1d;
 }
 
 .light {
-  --bg: #fff;
-  --text: #242424;
+  /* Selection and progress. Text is drawn on the accent background. */
+  --control-accent: #2f6feb;
+  --control-accent-text: #fff;
+
+  /* Page surfaces and content. */
+  --page-background: #fff;
+  --text-primary: #242424;
   --text-secondary: #7e7e7e;
-  --accent-text: #474747;
-  --border: #cdcdcd;
-  --surface-subtle: rgba(255, 255, 255, 0.03);
-  --control-bg: #fff;
-  --control-picker-bg: #fff;
+  --text-link: #474747;
+  --border-color: #cdcdcd;
+  --surface-background: rgba(255, 255, 255, 0.03);
+  --surface-background-hover: #d9d9d9;
+
+  /* Shared control surfaces, content, and interaction states. */
+  --control-background: #fff;
+  --control-background-active: #f1f1f1;
   --control-border: #cdcdcd;
-  --control-text: #242424;
-  --control-muted: #d9d9d9;
-  --control-accent: #fff;
-  --control-accent-hover: #f1f1f1;
-  --control-accent-fg: #242424;
-  --control-strong: #242424;
-  --control-ring: 0 0 0 3px #d4d4d420;
+  --control-border-hover: #aeadad;
+  --control-border-focus: #2f6feb;
+  --control-text-primary: #242424;
+  --control-text-secondary: #7e7e7e;
+  --control-placeholder-text: #9c9c9c;
+  --control-track-background: #d9d9d9;
+  --control-thumb-background: #fff;
+  /* A complete box-shadow value for keyboard/input focus. */
+  --control-focus-shadow: 0 0 0 3px #d4d4d420;
+
+  /* Component-specific surfaces. */
+  --button-background: #fff;
+  --button-background-hover: #f1f1f1;
+  --button-text: #242424;
+  --select-picker-background: #fff;
+  --file-selector-button-background: #f0f0f0;
 }

@@ -16,11 +16,11 @@ export function SelectExamples() @{
       <option value="latam">Latin America</option>
     </Select>
     <Select aria-label="Plan">
-      <optgroup label="Personal">
+      <optgroup label="-- Personal --">
         <option value="free">Free</option>
         <option value="pro">Pro</option>
       </optgroup>
-      <optgroup label="Team">
+      <optgroup label="-- Team --">
         <option value="business">Business</option>
         <option value="enterprise" disabled>
           Enterprise

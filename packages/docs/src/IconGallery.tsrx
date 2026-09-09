@@ -96,16 +96,16 @@ export function IconGallery() @{
         width: 100%;
         min-height: 2.5rem;
         padding: 0 0.875rem;
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        background: var(--surface-subtle);
-        color: var(--text);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background: var(--surface-background);
+        color: var(--text-primary);
         font-family: inherit;
         font-size: 0.9375rem;
       }
       .gallery-input:focus-visible {
         outline: none;
-        border-color: var(--accent-text);
+        border-color: var(--text-primary);
       }
       .gallery-hint,
       .gallery-count {
@@ -127,9 +127,9 @@ export function IconGallery() @{
         align-items: center;
         gap: 0.5rem;
         padding: 1rem 0.75rem;
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        background: var(--surface-subtle);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background: var(--surface-background);
         text-align: center;
       }
       .gallery-placeholder {
@@ -147,17 +147,17 @@ export function IconGallery() @{
       }
       .gallery-copy {
         padding: 0.3rem 0.6rem;
-        border: 1px solid var(--border);
-        border-radius: calc(var(--radius) - 0.2rem);
+        border: 1px solid var(--border-color);
+        border-radius: calc(var(--border-radius) - 0.2rem);
         background: transparent;
-        color: var(--text);
+        color: var(--text-primary);
         font-family: inherit;
         font-size: 0.75rem;
         cursor: pointer;
       }
       .gallery-copy:hover {
-        border-color: var(--accent-text);
-        color: var(--accent-text);
+        border-color: var(--text-primary);
+        color: var(--text-link);
       }
     </style>
   </div>

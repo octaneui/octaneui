@@ -39,11 +39,12 @@ export function Button({
         gap: var(--control-gap);
         box-sizing: border-box;
         min-height: var(--control-height);
-        padding: 0 var(--control-pad-x);
+        padding-block: 0;
+        padding-inline: var(--control-padding-inline);
         border: 1px solid var(--control-border);
-        border-radius: var(--radius);
-        background: var(--control-accent);
-        color: var(--control-accent-fg);
+        border-radius: var(--border-radius);
+        background: var(--button-background);
+        color: var(--button-text);
         font-family: inherit;
         font-size: var(--control-font-size);
         font-weight: 600;
@@ -56,11 +57,10 @@ export function Button({
           box-shadow 0.15s ease;
       }
       .root:hover:not(:disabled) {
-        background: var(--control-accent-hover);
+        background: var(--button-background-hover);
       }
       .root:focus-visible {
-        outline: none;
-        box-shadow: var(--control-ring);
+        outline: 2px solid var(--control-accent);
       }
       .root:disabled {
         opacity: 0.55;

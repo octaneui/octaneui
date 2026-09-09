@@ -21,22 +21,17 @@ export function Color({ style, ...rest }: ColorProps) @{
         height: var(--control-height);
         padding: 0.25rem;
         border: 1px solid var(--control-border);
-        border-radius: var(--radius);
-        background: var(--control-bg);
+        border-radius: var(--border-radius);
+        background: var(--control-background);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
-      .root:hover {
-        border-color: color-mix(
-          in srgb,
-          var(--control-accent) 40%,
-          var(--control-border)
-        );
+      .root:not(:has(.field:focus-visible)):has(.field:enabled):hover {
+        border-color: var(--control-border-hover);
       }
-      .root:focus-within {
-        border-color: var(--control-accent);
-        box-shadow: var(--control-ring);
+      .root:has(.field:focus-visible) {
+        border-color: var(--control-border-focus);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -61,11 +56,11 @@ export function Color({ style, ...rest }: ColorProps) @{
       }
       .field::-webkit-color-swatch {
         border: 0;
-        border-radius: calc(var(--radius) - 0.35rem);
+        border-radius: calc(var(--border-radius) - 0.35rem);
       }
       .field::-moz-color-swatch {
         border: 0;
-        border-radius: calc(var(--radius) - 0.35rem);
+        border-radius: calc(var(--border-radius) - 0.35rem);
       }
     </style>
   </div>

@@ -34,26 +34,22 @@ export function Calendar({
         box-sizing: border-box;
         width: 100%;
         min-height: var(--control-height);
-        padding: 0 var(--control-pad-x);
+        padding-block: 0;
+        padding-inline: var(--control-padding-inline);
         border: 1px solid var(--control-border);
-        border-radius: var(--radius);
-        background: var(--control-bg);
-        color: var(--control-text);
+        border-radius: var(--border-radius);
+        background: var(--control-background);
+        color: var(--control-text-primary);
         font-size: var(--control-font-size);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
-      .root:hover {
-        border-color: color-mix(
-          in srgb,
-          var(--control-accent) 40%,
-          var(--control-border)
-        );
+      .root:not(:has(.field:focus-visible)):has(.field:enabled):hover {
+        border-color: var(--control-border-hover);
       }
-      .root:focus-within {
-        border-color: var(--control-accent);
-        box-shadow: var(--control-ring);
+      .root:has(.field:focus-visible) {
+        border-color: var(--control-border-focus);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -83,7 +79,7 @@ export function Calendar({
         padding: 0;
         cursor: pointer;
         background: none;
-        background-color: var(--control-text);
+        background-color: var(--control-text-primary);
         mask: var(--calendar-icon) center / 1rem no-repeat;
       }
       .slot {
@@ -91,7 +87,7 @@ export function Calendar({
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        color: var(--control-text);
+        color: var(--control-text-primary);
         line-height: 1;
         pointer-events: none;
       }

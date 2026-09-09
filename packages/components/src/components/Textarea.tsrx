@@ -16,26 +16,21 @@ export function Textarea({ style, ...rest }: TextareaProps) @{
         display: flex;
         box-sizing: border-box;
         width: 100%;
-        padding: 0.5rem var(--control-pad-x);
+        padding: 0.5rem var(--control-padding-inline);
         border: 1px solid var(--control-border);
-        border-radius: var(--radius);
-        background: var(--control-bg);
-        color: var(--control-text);
+        border-radius: var(--border-radius);
+        background: var(--control-background);
+        color: var(--control-text-primary);
         font-size: var(--control-font-size);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
-      .root:hover {
-        border-color: color-mix(
-          in srgb,
-          var(--control-strong) 40%,
-          var(--control-border)
-        );
+      .root:not(:has(.field:focus-visible)):has(.field:enabled):hover {
+        border-color: var(--control-border-hover);
       }
-      .root:focus-within {
-        border-color: var(--control-strong);
-        box-shadow: var(--control-ring);
+      .root:has(.field:focus-visible) {
+        border-color: var(--control-border-focus);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -57,7 +52,7 @@ export function Textarea({ style, ...rest }: TextareaProps) @{
         field-sizing: content;
       }
       .field::placeholder {
-        color: var(--control-muted);
+        color: var(--control-placeholder-text);
       }
       .field:disabled {
         resize: none;

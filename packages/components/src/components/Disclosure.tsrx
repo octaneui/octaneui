@@ -22,20 +22,20 @@ export function Disclosure({
 
     <style>
       .root {
-        --disclosure-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M6 4l4 4-4 4'/%3E%3C/svg%3E");
+        --disclosure-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M6 4l4 4-4 4'/%3E%3C/svg%3E");
         box-sizing: border-box;
         width: 100%;
         border: 1px solid var(--control-border);
-        border-radius: var(--radius);
-        background: var(--control-bg);
-        color: var(--control-text);
+        border-radius: var(--border-radius);
+        background: var(--control-background);
+        color: var(--control-text-primary);
       }
       .summary {
         display: flex;
         align-items: center;
         gap: var(--control-gap);
         min-height: var(--control-height);
-        padding: 0.35rem var(--control-pad-x);
+        padding: 0.35rem var(--control-padding-inline);
         font-size: var(--control-font-size);
         font-weight: 600;
         cursor: pointer;
@@ -50,8 +50,8 @@ export function Disclosure({
         flex-shrink: 0;
         width: 1rem;
         height: 1rem;
-        background-color: var(--control-text);
-        mask: var(--disclosure-chevron) center / 1rem no-repeat;
+        background-color: var(--control-text-primary);
+        mask: var(--disclosure-icon) center / 1rem no-repeat;
         transition: rotate 0.15s ease;
       }
       .root[open] > .summary::before {
@@ -59,11 +59,10 @@ export function Disclosure({
       }
       .summary:focus-visible {
         outline: none;
-        box-shadow: var(--control-ring);
         border-radius: inherit;
       }
       .body {
-        padding: 0 var(--control-pad-x) 0.85rem;
+        padding: 0 var(--control-padding-inline) 0.85rem;
         color: var(--text-secondary);
         font-size: var(--control-font-size);
         line-height: 1.5;

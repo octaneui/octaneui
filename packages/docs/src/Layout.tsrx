@@ -1,8 +1,37 @@
 import type { OctaneNode } from "octane";
 import { Moon, Sun } from "octane-icons/lucide";
+import { OctaneUILogo } from "./OctaneUILogo.tsrx";
+
+const SITE_TITLE = "Octane UI";
+
+const PAGE_TITLES: Record<string, string> = {
+  "/components/input": "Input",
+  "/components/button": "Button",
+  "/components/select": "Select",
+  "/components/slider": "Slider",
+  "/components/calendar": "Calendar",
+  "/components/time": "Time",
+  "/components/checkbox": "Checkbox",
+  "/components/radio": "Radio",
+  "/components/switch": "Switch",
+  "/components/textarea": "Textarea",
+  "/components/color": "Color",
+  "/components/file-input": "File input",
+  "/components/progress": "Progress",
+  "/components/disclosure": "Disclosure",
+  "/components/dialog": "Dialog",
+  "/icons/lucide": "Icons",
+};
+
+function documentTitle(url?: string): string {
+  const pathname = (url ?? "/").split("?")[0] || "/";
+  const page = PAGE_TITLES[pathname];
+  return page ? `${SITE_TITLE} - ${page}` : SITE_TITLE;
+}
 
 interface LayoutProps {
   children: OctaneNode;
+  url?: string;
 }
 
 function toggleTheme() {
@@ -16,8 +45,9 @@ function toggleTheme() {
 
 export function Layout(props: LayoutProps) @{
   <div class="shell">
+    <title>{documentTitle(props.url)}</title>
     <nav class="nav">
-      <a class="nav-link" href="/">Octane UI</a>
+      <a class="nav-link" href="/" title="Octane UI"><OctaneUILogo width={16} height={16} fill="var(--text-primary)" /></a>
       <a class="nav-link" href="/components/input">Input</a>
       <a class="nav-link" href="/components/button">Button</a>
       <a class="nav-link" href="/components/select">Select</a>
@@ -66,8 +96,8 @@ export function Layout(props: LayoutProps) @{
         gap: 0.65rem 1rem;
         min-height: 60px;
         padding: 0.65rem 1.5rem;
-        border-bottom: 1px solid var(--border);
-        background: var(--header-bg);
+        border-bottom: 1px solid var(--border-color);
+        background: var(--header-background);
         backdrop-filter: blur(8px);
       }
       .nav-link {
@@ -76,7 +106,7 @@ export function Layout(props: LayoutProps) @{
         font-weight: 500;
       }
       .nav-link:hover {
-        color: var(--accent-text);
+        color: var(--text-link);
       }
       .theme-toggle {
         margin-left: auto;
@@ -88,17 +118,16 @@ export function Layout(props: LayoutProps) @{
         height: 2.25rem;
         padding: 0;
         border: 0;
-        border-radius: var(--radius);
+        border-radius: var(--border-radius);
         background: transparent;
         color: var(--text-secondary);
         cursor: pointer;
       }
       .theme-toggle:hover {
-        color: var(--accent-text);
+        color: var(--text-link);
       }
       .theme-toggle:focus-visible {
         outline: none;
-        box-shadow: var(--control-ring);
       }
       .theme-icon {
         display: flex;

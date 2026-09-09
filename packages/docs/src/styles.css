@@ -1,15 +1,11 @@
 @import "octane-ui/styles.css";
 
 :root {
-  --header-bg: rgba(1, 2, 4, 0.45);
-  --card-hover-border: rgba(255, 93, 114, 0.4);
-  --card-hover-bg: rgba(255, 65, 90, 0.07);
+  --header-background: rgba(1, 2, 4, 0.45);
   color-scheme: dark;
 }
 .light {
-  --header-bg: rgba(255, 255, 255, 0.85);
-  --card-hover-border: rgba(216, 31, 56, 0.35);
-  --card-hover-bg: rgba(216, 31, 56, 0.06);
+  --header-background: rgba(255, 255, 255, 0.85);
   color-scheme: light;
 }
 * {
@@ -17,8 +13,8 @@
 }
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--page-background);
+  color: var(--text-primary);
   font-family:
     Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
@@ -27,7 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 a {
-  color: var(--accent-text);
+  color: var(--text-link);
   text-decoration: none;
 }
 
@@ -55,9 +51,9 @@ a {
   flex-direction: column;
   gap: 0.75rem;
   padding: 1.25rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--surface-background);
 }
 .preview-row {
   display: flex;
@@ -86,13 +82,13 @@ a {
 .code-example {
   margin-top: 1rem;
   overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--surface-background);
 }
 .code-example-header {
   padding: 0.55rem 1rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-color);
   color: var(--text-secondary);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.8rem;

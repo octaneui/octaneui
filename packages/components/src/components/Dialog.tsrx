@@ -18,19 +18,16 @@ export function Dialog({ children, style, ...rest }: DialogProps) @{
         margin: auto;
         padding: 1.25rem;
         border: 1px solid var(--control-border);
-        border-radius: var(--radius);
-        background: var(--control-bg);
-        color: var(--control-text);
+        border-radius: var(--border-radius);
+        background: var(--control-background);
+        color: var(--control-text-primary);
         box-shadow: 0 0.75rem 1.75rem rgb(0 0 0 / 0.45);
       }
       .root::backdrop {
         background: rgb(0 0 0 / 0.55);
       }
-      .root:focus {
+      .root:focus:not(:focus-visible) {
         outline: none;
-      }
-      .root:focus-visible {
-        box-shadow: var(--control-ring);
       }
     </style>
   </dialog>
