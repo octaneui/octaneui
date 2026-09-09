@@ -18,6 +18,7 @@
   --text-secondary: #8c8c8c;
   --text-link: #fff;
   --border-color: #24262c;
+  --shadow-color: rgb(0 0 0 / 0.25);
   --surface-background: rgba(255, 255, 255, 0.03);
   --surface-background-hover: #303134;
 
@@ -53,6 +54,18 @@
   --alert-info-background: #1a2338;
   --alert-info-border: #2f6feb;
   --alert-info-text: #c5d4f5;
+  --toast-success-background: #15241c;
+  --toast-success-border: #3d9a64;
+  --toast-success-text: #c5e6d2;
+  --toast-warn-background: #2a2314;
+  --toast-warn-border: #c9a227;
+  --toast-warn-text: #ead9a0;
+  --toast-error-background: #2a1618;
+  --toast-error-border: #d45454;
+  --toast-error-text: #f0c0c0;
+  --toast-info-background: #1a2338;
+  --toast-info-border: #2f6feb;
+  --toast-info-text: #c5d4f5;
 }
 
 .light {
@@ -66,6 +79,7 @@
   --text-secondary: #7e7e7e;
   --text-link: #474747;
   --border-color: #cdcdcd;
+  --shadow-color: rgb(0 0 0 / 0.15);
   --surface-background: rgba(255, 255, 255, 0.03);
   --surface-background-hover: #d9d9d9;
 
@@ -101,4 +115,16 @@
   --alert-info-background: #eef3fc;
   --alert-info-border: #2f6feb;
   --alert-info-text: #1a3a7a;
+  --toast-success-background: #eaf6ef;
+  --toast-success-border: #2d8a52;
+  --toast-success-text: #1a5c35;
+  --toast-warn-background: #fbf6e8;
+  --toast-warn-border: #c49212;
+  --toast-warn-text: #6b5208;
+  --toast-error-background: #fbeeee;
+  --toast-error-border: #c43c3c;
+  --toast-error-text: #8a1f1f;
+  --toast-info-background: #eef3fc;
+  --toast-info-border: #2f6feb;
+  --toast-info-text: #1a3a7a;
 }

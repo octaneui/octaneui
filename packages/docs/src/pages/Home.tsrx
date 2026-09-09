@@ -1,6 +1,7 @@
 import type { LucideIcon } from "@octaneui/icons/lucide";
 import {
   AppWindow,
+  Bell,
   Calendar,
   ChevronsDownUp,
   ChevronsUpDown,
@@ -24,25 +25,26 @@ import installHtml from "../examples/Install.sh?highlight";
 import installStylesHtml from "../examples/InstallStyles.css?highlight";
 
 const COMPONENTS: { name: string; href: string; Icon: LucideIcon }[] = [
-  { name: "Input", href: "/components/input", Icon: TextCursorInput },
+  { name: "Alert", href: "/components/alert", Icon: CircleAlert },
   { name: "Button", href: "/components/button", Icon: RectangleEllipsis },
+  { name: "Calendar", href: "/components/calendar", Icon: Calendar },
+  { name: "Checkbox", href: "/components/checkbox", Icon: SquareCheck },
+  { name: "Color", href: "/components/color", Icon: Palette },
+  { name: "Dialog", href: "/components/dialog", Icon: AppWindow },
+  { name: "Disclosure", href: "/components/disclosure", Icon: ChevronsDownUp },
+  { name: "File input", href: "/components/file-input", Icon: FileUp },
+  { name: "Icons", href: "/icons/lucide", Icon: Sparkles },
+  { name: "Input", href: "/components/input", Icon: TextCursorInput },
+  { name: "Popover", href: "/components/popover", Icon: PanelBottom },
+  { name: "Progress", href: "/components/progress", Icon: LoaderCircle },
+  { name: "Radio", href: "/components/radio", Icon: CircleDot },
   { name: "Select", href: "/components/select", Icon: ChevronsUpDown },
   { name: "Slider", href: "/components/slider", Icon: SlidersHorizontal },
-  { name: "Calendar", href: "/components/calendar", Icon: Calendar },
-  { name: "Time", href: "/components/time", Icon: Clock },
-  { name: "Checkbox", href: "/components/checkbox", Icon: SquareCheck },
-  { name: "Radio", href: "/components/radio", Icon: CircleDot },
   { name: "Switch", href: "/components/switch", Icon: ToggleLeft },
-  { name: "Textarea", href: "/components/textarea", Icon: TextAlignStart },
-  { name: "Color", href: "/components/color", Icon: Palette },
-  { name: "File input", href: "/components/file-input", Icon: FileUp },
-  { name: "Progress", href: "/components/progress", Icon: LoaderCircle },
-  { name: "Disclosure", href: "/components/disclosure", Icon: ChevronsDownUp },
-  { name: "Dialog", href: "/components/dialog", Icon: AppWindow },
-  { name: "Popover", href: "/components/popover", Icon: PanelBottom },
   { name: "Tabs", href: "/components/tabs", Icon: AppWindow },
-  { name: "Alert", href: "/components/alert", Icon: CircleAlert },
-  { name: "Icons", href: "/icons/lucide", Icon: Sparkles },
+  { name: "Textarea", href: "/components/textarea", Icon: TextAlignStart },
+  { name: "Time", href: "/components/time", Icon: Clock },
+  { name: "Toast", href: "/components/toast", Icon: Bell },
 ];
 
 export function Home() @{

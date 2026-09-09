@@ -7,7 +7,7 @@ export function AlertDocs() @{
     <h1 class="title">Alert</h1>
     <p class="lede">
       Status banner with <code>success</code>, <code>warn</code>,{" "}
-      <code>error</code>, and <code>info</code> types. Pass icons or actions
+      <code>error</code>, and <code>info</code> variants. Pass icons or actions
       through optional <code>left</code> and <code>right</code> slots.
     </p>
     <div class="preview">

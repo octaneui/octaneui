@@ -30,6 +30,7 @@ Names follow `--scope-property-state`: the scope identifies the page, shared con
 | `--text-secondary` | Supporting text, including disclosure content. |
 | `--text-link` | Links and navigation highlights. |
 | `--border-color` | Page surface borders. |
+| `--shadow-color` | Elevation shadow tint. White in the dark theme, black in the light theme. |
 | `--surface-background` | Cards, previews, and code containers. |
 | `--surface-background-hover` | Hovered page surfaces. |
 | `--control-height` | Standard single-line control height. |
@@ -64,3 +65,15 @@ Names follow `--scope-property-state`: the scope identifies the page, shared con
 | `--alert-info-background` | Info alert fill. |
 | `--alert-info-border` | Info alert border. |
 | `--alert-info-text` | Info alert text and icons. |
+| `--toast-success-background` | Success toast fill. |
+| `--toast-success-border` | Success toast border. |
+| `--toast-success-text` | Success toast text and icons. |
+| `--toast-warn-background` | Warn toast fill. |
+| `--toast-warn-border` | Warn toast border. |
+| `--toast-warn-text` | Warn toast text and icons. |
+| `--toast-error-background` | Error toast fill. |
+| `--toast-error-border` | Error toast border. |
+| `--toast-error-text` | Error toast text and icons. |
+| `--toast-info-background` | Info toast fill. |
+| `--toast-info-border` | Info toast border. |
+| `--toast-info-text` | Info toast text and icons. |

@@ -6,16 +6,16 @@ type AlertNativeProps = Omit<
   "className"
 >;
 
-export type AlertType = "success" | "warn" | "error" | "info";
+export type AlertVariant = "success" | "warn" | "error" | "info";
 
 export interface AlertProps extends AlertNativeProps {
-  type?: AlertType;
+  variant?: AlertVariant;
   left?: OctaneNode;
   right?: OctaneNode;
 }
 
 export function Alert({
-  type = "info",
+  variant = "info",
   left,
   right,
   children,
@@ -23,9 +23,9 @@ export function Alert({
   ...rest
 }: AlertProps) @{
   <div
-    role={type === "error" || type === "warn" ? "alert" : "status"}
+    role={variant === "error" || variant === "warn" ? "alert" : "status"}
     {...rest}
-    class={["root", type, rest.class]}
+    class={["root", variant, rest.class]}
     style={style}
   >
     @if (left) {

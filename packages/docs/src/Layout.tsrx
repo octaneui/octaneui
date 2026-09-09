@@ -23,6 +23,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/components/popover": "Popover",
   "/components/tabs": "Tabs",
   "/components/alert": "Alert",
+  "/components/toast": "Toast",
   "/icons/lucide": "Icons",
 };
 
@@ -70,6 +71,7 @@ export function Layout(props: LayoutProps) @{
       <a class="nav-link" href="/components/tabs">Tabs</a>
       <a class="nav-link" href="/components/textarea">Textarea</a>
       <a class="nav-link" href="/components/time">Time</a>
+      <a class="nav-link" href="/components/toast">Toast</a>
       <button
         type="button"
         class="theme-toggle"

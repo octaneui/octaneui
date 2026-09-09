@@ -31,8 +31,19 @@ export { Popover, type PopoverProps } from "./components/Popover.tsrx";
 export {
   Alert,
   type AlertProps,
-  type AlertType,
+  type AlertVariant,
 } from "./components/Alert.tsrx";
+export {
+  Toast,
+  ToastProvider,
+  useToast,
+  type ToastProps,
+  type ToastVariant,
+  type ToastPosition,
+  type ToastOptions,
+  type ToastApi,
+  type ToastProviderProps,
+} from "./components/Toast.tsrx";
 export {
   Tabs,
   TabList,

@@ -1,4 +1,4 @@
-import { Alert } from "@octaneui/core";
+import { Toast } from "@octaneui/core";
 import {
   CircleCheck,
   CircleX,
@@ -7,20 +7,20 @@ import {
   X,
 } from "@octaneui/icons/lucide";
 
-export function AlertExamples() @{
+export function ToastExamples() @{
   <div class="stack">
-    <Alert variant="success" left={<CircleCheck size={16} />}>
+    <Toast variant="success" left={<CircleCheck size={16} />}>
       Your changes have been saved.
-    </Alert>
-    <Alert variant="warn" left={<TriangleAlert size={16} />}>
+    </Toast>
+    <Toast variant="warn" left={<TriangleAlert size={16} />}>
       Your session expires in 5 minutes.
-    </Alert>
-    <Alert variant="error" left={<CircleX size={16} />}>
+    </Toast>
+    <Toast variant="error" left={<CircleX size={16} />}>
       Could not connect to the server.
-    </Alert>
-    <Alert variant="info" left={<Info size={16} />} right={<X size={16} />}>
+    </Toast>
+    <Toast variant="info" left={<Info size={16} />} right={<X size={16} />}>
       A new version is available.
-    </Alert>
+    </Toast>
 
     <style>
       .stack {
