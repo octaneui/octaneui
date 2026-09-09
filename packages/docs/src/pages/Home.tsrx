@@ -37,6 +37,7 @@ const COMPONENTS: { name: string; href: string; Icon: LucideIcon }[] = [
   { name: "Progress", href: "/components/progress", Icon: LoaderCircle },
   { name: "Disclosure", href: "/components/disclosure", Icon: ChevronsDownUp },
   { name: "Dialog", href: "/components/dialog", Icon: AppWindow },
+  { name: "Tabs", href: "/components/tabs", Icon: AppWindow },
   { name: "Icons", href: "/icons/lucide", Icon: Sparkles },
 ];
 

@@ -20,6 +20,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/components/progress": "Progress",
   "/components/disclosure": "Disclosure",
   "/components/dialog": "Dialog",
+  "/components/tabs": "Tabs",
   "/icons/lucide": "Icons",
 };
 
@@ -63,6 +64,7 @@ export function Layout(props: LayoutProps) @{
       <a class="nav-link" href="/components/progress">Progress</a>
       <a class="nav-link" href="/components/disclosure">Disclosure</a>
       <a class="nav-link" href="/components/dialog">Dialog</a>
+      <a class="nav-link" href="/components/tabs">Tabs</a>
       <a class="nav-link" href="/icons/lucide">Icons</a>
       <button
         type="button"

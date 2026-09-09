@@ -113,3 +113,14 @@ a {
 .light .code-example-content .shiki span {
   color: var(--shiki-light);
 }
+
+code:not(pre *) {
+  background: #0d1627;
+  color: #5c93ff;
+  padding-inline: 2px;
+}
+
+.light code:not(pre *) {
+  background: #f0f0f0;
+  color: #2871ff;
+}

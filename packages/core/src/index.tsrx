@@ -27,3 +27,13 @@ export {
   type DisclosureProps,
 } from "./components/Disclosure.tsrx";
 export { Dialog, type DialogProps } from "./components/Dialog.tsrx";
+export {
+  Tabs,
+  TabList,
+  Tab,
+  TabPanel,
+  type TabsProps,
+  type TabListProps,
+  type TabProps,
+  type TabPanelProps,
+} from "./components/Tabs.tsrx";

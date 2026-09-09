@@ -74,6 +74,7 @@ export function tsrxHighlight(): Plugin {
 
       const filename = id
         .slice(VIRTUAL_PREFIX.length, -VIRTUAL_JS_SUFFIX.length);
+      this.addWatchFile(filename);
       const source = (await readFile(filename, "utf8")).trim();
       const highlighter = await getHighlighter();
       const html = highlighter.codeToHtml(source, {
@@ -86,6 +87,15 @@ export function tsrxHighlight(): Plugin {
       });
 
       return `export default ${JSON.stringify(html)};`;
+    },
+
+    handleHotUpdate({ file, server }) {
+      const id = VIRTUAL_PREFIX + file + VIRTUAL_JS_SUFFIX;
+      const module = server.moduleGraph.getModuleById(id);
+      if (!module) return;
+
+      server.moduleGraph.invalidateModule(module);
+      server.ws.send({ type: "full-reload" });
     },
   };
 }

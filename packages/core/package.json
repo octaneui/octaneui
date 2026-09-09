@@ -38,6 +38,7 @@
     "./file-input": "./src/components/FileInput.tsrx",
     "./progress": "./src/components/Progress.tsrx",
     "./disclosure": "./src/components/Disclosure.tsrx",
+    "./tabs": "./src/components/Tabs.tsrx",
     "./dialog": "./src/components/Dialog.tsrx",
     "./styles.css": "./src/styles.css"
   },

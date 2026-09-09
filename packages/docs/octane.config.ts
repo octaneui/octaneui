@@ -86,6 +86,11 @@ export default defineConfig({
         layout: "/src/Layout.tsrx",
       }),
       new RenderRoute({
+        path: "/components/tabs",
+        entry: ["TabsDocs", "/src/pages/Tabs.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
         path: "/icons/lucide",
         entry: ["LucideIconsDocs", "/src/pages/Icons.tsrx"],
         layout: "/src/Layout.tsrx",
