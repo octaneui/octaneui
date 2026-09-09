@@ -5,6 +5,7 @@ import { createHighlighter, type Highlighter, type LanguageInput } from "shiki";
 
 const HIGHLIGHT_SUFFIX = "?highlight";
 const VIRTUAL_PREFIX = "\0octane-ui:highlight:";
+const VIRTUAL_JS_SUFFIX = ".highlighted.js";
 
 // TSRX is TypeScript + JSX with a small set of template directives. Shiki does
 // not ship a TSRX language yet, so layer those directives over its bundled TSX
@@ -38,10 +39,16 @@ const tsrxLanguage: LanguageInput = {
 
 let highlighterPromise: Promise<Highlighter> | undefined;
 
+function languageForFilename(filename: string) {
+  if (filename.endsWith(".css")) return "css";
+  if (filename.endsWith(".sh") || filename.endsWith(".bash")) return "bash";
+  return "tsrx";
+}
+
 function getHighlighter() {
   highlighterPromise ??= createHighlighter({
     themes: ["github-light", "github-dark-high-contrast"],
-    langs: ["tsx", "css", tsrxLanguage],
+    langs: ["tsx", "css", "bash", tsrxLanguage],
   });
   return highlighterPromise;
 }
@@ -55,17 +62,22 @@ export function tsrxHighlight(): Plugin {
       if (!source.endsWith(HIGHLIGHT_SUFFIX) || !importer) return null;
 
       const sourcePath = source.slice(0, -HIGHLIGHT_SUFFIX.length);
-      return VIRTUAL_PREFIX + resolve(dirname(importer), sourcePath);
+      return (
+        VIRTUAL_PREFIX +
+        resolve(dirname(importer), sourcePath) +
+        VIRTUAL_JS_SUFFIX
+      );
     },
 
     async load(id) {
       if (!id.startsWith(VIRTUAL_PREFIX)) return null;
 
-      const filename = id.slice(VIRTUAL_PREFIX.length);
+      const filename = id
+        .slice(VIRTUAL_PREFIX.length, -VIRTUAL_JS_SUFFIX.length);
       const source = (await readFile(filename, "utf8")).trim();
       const highlighter = await getHighlighter();
       const html = highlighter.codeToHtml(source, {
-        lang: "tsrx",
+        lang: languageForFilename(filename),
         themes: {
           light: "github-light",
           dark: "github-dark-high-contrast",
