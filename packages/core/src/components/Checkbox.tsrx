@@ -1,6 +1,6 @@
 import type { OctaneNode } from "octane";
 import type { Octane } from "octane/jsx-runtime";
-import { Check } from "octane-icons/lucide";
+import { Check } from "@octaneui/icons/lucide";
 
 type CheckboxNativeProps = Omit<
   Octane.InputHTMLAttributes<HTMLInputElement>,

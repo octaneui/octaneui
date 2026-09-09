@@ -1,8 +1,8 @@
-# octane-icons
+# @octaneui/icons
 
 Framework-native icon packages for [Octane](https://octanejs.dev), generated
 from upstream icon sets. Each family ships as its own subpath (starting with
-`octane-icons/lucide`) so future sets can be added without collisions.
+`@octaneui/icons`) so future sets can be added without collisions.
 
 Icons are plain Octane components: no React, no Lucide runtime, and no
 `@lucide/icons` dependency ship in the published package. Each icon's SVG
@@ -12,7 +12,7 @@ code generator, as a dev dependency.
 ## Install
 
 ```bash
-bun add octane-icons
+bun add @octaneui/icons
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ bun add octane-icons
 Named icons are tree-shakeable and accept familiar Lucide presentation props:
 
 ```tsrx
-import { Camera, CircleAlert } from "octane-icons/lucide";
+import { Camera, CircleAlert } from "@octaneui/icons/lucide";
 
 export function Toolbar() @{
   <nav>
@@ -33,8 +33,8 @@ export function Toolbar() @{
 Provider defaults and per-icon deep imports are supported:
 
 ```tsrx
-import { Camera } from "octane-icons/lucide/icons/camera";
-import { LucideProvider } from "octane-icons/lucide";
+import { Camera } from "@octaneui/icons/icons/camera";
+import { LucideProvider } from "@octaneui/icons/lucide";
 
 export function App() @{
   <LucideProvider color="rebeccapurple" strokeWidth={1.5}>
@@ -48,7 +48,7 @@ import — intended for client-only, interactive use (search/browse UIs) since
 it loads icon data with `useState`/`useEffect` after mount:
 
 ```tsrx
-import { DynamicIcon } from "octane-icons/lucide/dynamic";
+import { DynamicIcon } from "@octaneui/icons/dynamic";
 
 export function IconPreview({ name }: { name: string }) @{
   <DynamicIcon name={name} fallback={() => <span>…</span>} />

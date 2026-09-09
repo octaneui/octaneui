@@ -1,4 +1,4 @@
-import { Button, Dialog } from "octane-ui";
+import { Button, Dialog } from "@octaneui/core";
 
 export function DialogExamples() @{
   <>

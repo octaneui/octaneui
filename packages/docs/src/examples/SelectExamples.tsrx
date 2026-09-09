@@ -1,5 +1,5 @@
-import { Select } from "octane-ui";
-import { Globe } from "octane-icons/lucide";
+import { Select } from "@octaneui/core";
+import { Globe } from "@octaneui/icons/lucide";
 
 export function SelectExamples() @{
   <>

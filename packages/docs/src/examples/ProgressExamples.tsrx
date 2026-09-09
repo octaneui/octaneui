@@ -1,4 +1,4 @@
-import { Progress } from "octane-ui";
+import { Progress } from "@octaneui/core";
 
 export function ProgressExamples() @{
   <>

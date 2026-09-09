@@ -1,4 +1,4 @@
-import { Textarea } from "octane-ui";
+import { Textarea } from "@octaneui/core";
 
 export function TextareaExamples() @{
   <>

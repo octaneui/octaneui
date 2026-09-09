@@ -1,4 +1,4 @@
-import { Radio, RadioGroup } from "octane-ui";
+import { Radio, RadioGroup } from "@octaneui/core";
 
 export function RadioExamples() @{
   <>

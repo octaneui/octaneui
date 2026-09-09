@@ -41,7 +41,7 @@ SOFTWARE.
 
 ---
 
-The `octane-icons` package itself (the generator and the Octane-specific
+The `@octaneui/icons` package itself (the generator and the Octane-specific
 runtime under `src/lucide/*.ts` that is not generated icon geometry) is
 additionally available under the ISC License:
 

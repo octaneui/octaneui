@@ -1,5 +1,5 @@
 import type { OctaneNode } from "octane";
-import { Moon, Sun } from "octane-icons/lucide";
+import { Moon, Sun } from "@octaneui/icons/lucide";
 import { OctaneUILogo } from "./OctaneUILogo.tsrx";
 
 const SITE_TITLE = "Octane UI";

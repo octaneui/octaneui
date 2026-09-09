@@ -1,5 +1,5 @@
 {
-  "name": "octane-ui",
+  "name": "@octaneui/core",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -30,7 +30,7 @@
     "typecheck": "tsrx-tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
-    "octane-icons": "workspace:*"
+    "@octaneui/icons": "workspace:*"
   },
   "peerDependencies": {
     "octane": "^0.1.44"

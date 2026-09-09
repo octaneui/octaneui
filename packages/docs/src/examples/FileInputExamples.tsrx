@@ -1,5 +1,5 @@
-import { FileInput } from "octane-ui";
-import { Paperclip } from "octane-icons/lucide";
+import { FileInput } from "@octaneui/core";
+import { Paperclip } from "@octaneui/icons/lucide";
 
 export function FileInputExamples() @{
   <>

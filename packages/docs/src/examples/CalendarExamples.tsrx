@@ -1,5 +1,5 @@
-import { Calendar } from "octane-ui";
-import { CalendarDays } from "octane-icons/lucide";
+import { Calendar } from "@octaneui/core";
+import { CalendarDays } from "@octaneui/icons/lucide";
 
 export function CalendarExamples() @{
   <>

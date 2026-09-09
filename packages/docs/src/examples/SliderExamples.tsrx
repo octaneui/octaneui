@@ -1,4 +1,4 @@
-import { Slider } from "octane-ui";
+import { Slider } from "@octaneui/core";
 
 export function SliderExamples() @{
   <>

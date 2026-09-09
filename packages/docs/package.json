@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "octane-preview",
+    "preview:cf": "bun run build && wrangler dev",
+    "deploy": "bun run build && wrangler deploy",
     "typecheck": "tsrx-tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
+    "@octanejs/adapter-cloudflare": "^0.0.44",
     "@octanejs/vite-plugin": "^0.1.44",
     "octane": "^0.1.44",
-    "octane-icons": "workspace:*",
-    "octane-ui": "workspace:*"
+    "@octaneui/icons": "workspace:*",
+    "@octaneui/core": "workspace:*"
   },
   "devDependencies": {
     "@tsrx/prettier-plugin": "^0.3.124",
@@ -22,6 +25,7 @@
     "prettier": "^3.9.6",
     "shiki": "^4.4.3",
     "typescript": "^7.0.2",
-    "vite": "^8.2.2"
+    "vite": "^8.2.2",
+    "wrangler": "^4.130.0"
   }
 }

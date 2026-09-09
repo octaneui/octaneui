@@ -1,4 +1,4 @@
-import { Disclosure } from "octane-ui";
+import { Disclosure } from "@octaneui/core";
 
 export function DisclosureExamples() @{
   <>

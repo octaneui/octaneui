@@ -5,8 +5,8 @@ import dynamicIconImports from "./dynamicIconImports";
 import type { IconName } from "./dynamicIconImports";
 import type { IconNode, LucideProps } from "./types";
 
-const STATE_SLOT = Symbol.for("octane-icons/lucide:DynamicIcon:iconNode");
-const EFFECT_SLOT = Symbol.for("octane-icons/lucide:DynamicIcon:load");
+const STATE_SLOT = Symbol.for("@octaneui/icons:DynamicIcon:iconNode");
+const EFFECT_SLOT = Symbol.for("@octaneui/icons:DynamicIcon:load");
 
 export interface DynamicIconProps extends LucideProps {
   name: IconName;
@@ -17,7 +17,7 @@ export const iconNames = Object.keys(dynamicIconImports) as IconName[];
 
 async function loadIconNode(name: IconName): Promise<IconNode> {
   if (!(name in dynamicIconImports)) {
-    throw new Error(`[octane-icons/lucide]: icon "${name}" was not found`);
+    throw new Error(`[@octaneui/icons]: icon "${name}" was not found`);
   }
   const module = await dynamicIconImports[name]();
   return module.iconNode;

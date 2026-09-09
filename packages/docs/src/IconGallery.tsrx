@@ -1,6 +1,6 @@
 import { useState } from "octane";
-import { DynamicIcon, iconNames } from "octane-icons/lucide/dynamic";
-import type { IconName } from "octane-icons/lucide/dynamic";
+import { DynamicIcon, iconNames } from "@octaneui/icons/lucide/dynamic";
+import type { IconName } from "@octaneui/icons/lucide/dynamic";
 
 const RESULT_LIMIT = 60;
 const TOTAL_ICON_COUNT = iconNames.length;
@@ -25,7 +25,7 @@ export function IconGallery() @{
   const visibleMatches = allMatches.slice(0, RESULT_LIMIT);
 
   function copyImport(name: IconName) {
-    const snippet = `import { ${toDisplayPascalCase(name)} } from "octane-icons/lucide";`;
+    const snippet = `import { ${toDisplayPascalCase(name)} } from "@octaneui/icons/lucide";`;
     navigator.clipboard
       ?.writeText(snippet)
       .then(() => {

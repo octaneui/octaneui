@@ -1,5 +1,5 @@
-import { Input } from "octane-ui";
-import { Search } from "octane-icons/lucide";
+import { Input } from "@octaneui/core";
+import { Search } from "@octaneui/icons/lucide";
 
 export function InputExamples() @{
   <>

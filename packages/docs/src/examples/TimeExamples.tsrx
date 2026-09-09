@@ -1,5 +1,5 @@
-import { Time } from "octane-ui";
-import { Clock } from "octane-icons/lucide";
+import { Time } from "@octaneui/core";
+import { Clock } from "@octaneui/icons/lucide";
 
 export function TimeExamples() @{
   <>

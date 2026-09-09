@@ -1,4 +1,4 @@
-import { Camera, CircleAlert, Compass, Heart, LucideProvider } from "octane-icons/lucide";
+import { Camera, CircleAlert, Compass, Heart, LucideProvider } from "@octaneui/icons/lucide";
 
 export function IconsExamples() @{
   <>

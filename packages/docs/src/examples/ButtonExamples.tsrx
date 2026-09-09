@@ -1,5 +1,5 @@
-import { Button } from "octane-ui";
-import { ArrowRight, Plus } from "octane-icons/lucide";
+import { Button } from "@octaneui/core";
+import { ArrowRight, Plus } from "@octaneui/icons/lucide";
 
 export function ButtonExamples() @{
   <>

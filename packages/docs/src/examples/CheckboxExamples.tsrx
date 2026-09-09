@@ -1,4 +1,4 @@
-import { Checkbox } from "octane-ui";
+import { Checkbox } from "@octaneui/core";
 
 export function CheckboxExamples() @{
   <>

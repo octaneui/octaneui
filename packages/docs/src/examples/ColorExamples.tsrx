@@ -1,4 +1,4 @@
-import { Color } from "octane-ui";
+import { Color } from "@octaneui/core";
 
 export function ColorExamples() @{
   <>

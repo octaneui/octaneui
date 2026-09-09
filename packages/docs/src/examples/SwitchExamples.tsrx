@@ -1,4 +1,4 @@
-import { Switch } from "octane-ui";
+import { Switch } from "@octaneui/core";
 
 export function SwitchExamples() @{
   <>
