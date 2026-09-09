@@ -1,10 +1,22 @@
 {
   "name": "@octaneui/icons",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "description": "Framework-native icon packages for Octane, generated from upstream icon sets.",
   "license": "ISC",
+  "homepage": "https://octaneui.dev",
+  "bugs": {
+    "url": "https://github.com/octaneui/octaneui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octaneui/octaneui.git",
+    "directory": "packages/icons"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["octane", "octaneui", "icons"],
   "sideEffects": false,
   "files": ["src", "README.md", "LICENSE"],
   "main": "./src/lucide/index.ts",

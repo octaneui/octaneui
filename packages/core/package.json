@@ -1,8 +1,23 @@
 {
   "name": "@octaneui/core",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "description": "Core components for Octane UI",
+  "license": "ISC",
+  "homepage": "https://octaneui.dev",
+  "bugs": {
+    "url": "https://github.com/octaneui/octaneui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octaneui/octaneui.git",
+    "directory": "packages/core"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["octane", "octaneui", "ui", "components"],
+  "sideEffects": false,
   "files": ["src", "README.md"],
   "main": "./src/index.tsrx",
   "module": "./src/index.tsrx",
