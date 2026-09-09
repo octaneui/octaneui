@@ -41,6 +41,7 @@
     "./tabs": "./src/components/Tabs.tsrx",
     "./dialog": "./src/components/Dialog.tsrx",
     "./popover": "./src/components/Popover.tsrx",
+    "./alert": "./src/components/Alert.tsrx",
     "./styles.css": "./src/styles.css"
   },
   "scripts": {

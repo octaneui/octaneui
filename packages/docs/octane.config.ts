@@ -86,8 +86,18 @@ export default defineConfig({
         layout: "/src/Layout.tsrx",
       }),
       new RenderRoute({
+        path: "/components/popover",
+        entry: ["PopoverDocs", "/src/pages/Popover.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
         path: "/components/tabs",
         entry: ["TabsDocs", "/src/pages/Tabs.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/alert",
+        entry: ["AlertDocs", "/src/pages/Alert.tsrx"],
         layout: "/src/Layout.tsrx",
       }),
       new RenderRoute({

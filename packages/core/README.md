@@ -52,3 +52,15 @@ Names follow `--scope-property-state`: the scope identifies the page, shared con
 | `--button-background-hover` | Hovered button background. |
 | `--button-text` | Button label and icon color. |
 | `--select-picker-background` | Select popup background where browser picker styling is supported. |
+| `--alert-success-background` | Success alert fill. |
+| `--alert-success-border` | Success alert border. |
+| `--alert-success-text` | Success alert text and icons. |
+| `--alert-warn-background` | Warn alert fill. |
+| `--alert-warn-border` | Warn alert border. |
+| `--alert-warn-text` | Warn alert text and icons. |
+| `--alert-error-background` | Error alert fill. |
+| `--alert-error-border` | Error alert border. |
+| `--alert-error-text` | Error alert text and icons. |
+| `--alert-info-background` | Info alert fill. |
+| `--alert-info-border` | Info alert border. |
+| `--alert-info-text` | Info alert text and icons. |

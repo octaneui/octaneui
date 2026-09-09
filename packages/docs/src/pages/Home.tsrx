@@ -4,11 +4,13 @@ import {
   Calendar,
   ChevronsDownUp,
   ChevronsUpDown,
+  CircleAlert,
   CircleDot,
   Clock,
   FileUp,
   LoaderCircle,
   Palette,
+  PanelBottom,
   RectangleEllipsis,
   SlidersHorizontal,
   Sparkles,
@@ -37,7 +39,9 @@ const COMPONENTS: { name: string; href: string; Icon: LucideIcon }[] = [
   { name: "Progress", href: "/components/progress", Icon: LoaderCircle },
   { name: "Disclosure", href: "/components/disclosure", Icon: ChevronsDownUp },
   { name: "Dialog", href: "/components/dialog", Icon: AppWindow },
+  { name: "Popover", href: "/components/popover", Icon: PanelBottom },
   { name: "Tabs", href: "/components/tabs", Icon: AppWindow },
+  { name: "Alert", href: "/components/alert", Icon: CircleAlert },
   { name: "Icons", href: "/icons/lucide", Icon: Sparkles },
 ];
 

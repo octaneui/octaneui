@@ -7,7 +7,7 @@ export function LucideIconsDocs() @{
   <section class="page">
     <h1 class="title">Icons</h1>
     <p class="lede">
-      Lucide icons generated as native Octane components via{" "}
+      <a href="https://lucide.dev" target="_blank" rel="noopener noreferrer">Lucide icons</a> generated as native Octane components via{" "}
       <code>@octaneui/icons</code>. No React, no Lucide runtime, and no{" "}
       <code>@lucide/icons</code> dependency ship in the package — each icon's
       SVG data is inlined at generation time.

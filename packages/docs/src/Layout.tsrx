@@ -20,7 +20,9 @@ const PAGE_TITLES: Record<string, string> = {
   "/components/progress": "Progress",
   "/components/disclosure": "Disclosure",
   "/components/dialog": "Dialog",
+  "/components/popover": "Popover",
   "/components/tabs": "Tabs",
+  "/components/alert": "Alert",
   "/icons/lucide": "Icons",
 };
 
@@ -49,23 +51,25 @@ export function Layout(props: LayoutProps) @{
     <title>{documentTitle(props.url)}</title>
     <nav class="nav">
       <a class="nav-link" href="/" title="Octane UI"><OctaneUILogo width={16} height={16} fill="var(--text-primary)" /></a>
-      <a class="nav-link" href="/components/input">Input</a>
+      <a class="nav-link" href="/components/alert">Alert</a>
       <a class="nav-link" href="/components/button">Button</a>
+      <a class="nav-link" href="/components/calendar">Calendar</a>
+      <a class="nav-link" href="/components/checkbox">Checkbox</a>
+      <a class="nav-link" href="/components/color">Color</a>
+      <a class="nav-link" href="/components/dialog">Dialog</a>
+      <a class="nav-link" href="/components/disclosure">Disclosure</a>
+      <a class="nav-link" href="/components/file-input">File</a>
+      <a class="nav-link" href="/icons/lucide">Icons</a>
+      <a class="nav-link" href="/components/input">Input</a>
+      <a class="nav-link" href="/components/popover">Popover</a>
+      <a class="nav-link" href="/components/progress">Progress</a>
+      <a class="nav-link" href="/components/radio">Radio</a>
       <a class="nav-link" href="/components/select">Select</a>
       <a class="nav-link" href="/components/slider">Slider</a>
-      <a class="nav-link" href="/components/calendar">Calendar</a>
-      <a class="nav-link" href="/components/time">Time</a>
-      <a class="nav-link" href="/components/checkbox">Checkbox</a>
-      <a class="nav-link" href="/components/radio">Radio</a>
       <a class="nav-link" href="/components/switch">Switch</a>
-      <a class="nav-link" href="/components/textarea">Textarea</a>
-      <a class="nav-link" href="/components/color">Color</a>
-      <a class="nav-link" href="/components/file-input">File</a>
-      <a class="nav-link" href="/components/progress">Progress</a>
-      <a class="nav-link" href="/components/disclosure">Disclosure</a>
-      <a class="nav-link" href="/components/dialog">Dialog</a>
       <a class="nav-link" href="/components/tabs">Tabs</a>
-      <a class="nav-link" href="/icons/lucide">Icons</a>
+      <a class="nav-link" href="/components/textarea">Textarea</a>
+      <a class="nav-link" href="/components/time">Time</a>
       <button
         type="button"
         class="theme-toggle"

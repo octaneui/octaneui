@@ -29,6 +29,11 @@ export {
 export { Dialog, type DialogProps } from "./components/Dialog.tsrx";
 export { Popover, type PopoverProps } from "./components/Popover.tsrx";
 export {
+  Alert,
+  type AlertProps,
+  type AlertType,
+} from "./components/Alert.tsrx";
+export {
   Tabs,
   TabList,
   Tab,

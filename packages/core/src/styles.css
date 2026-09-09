@@ -41,6 +41,18 @@
   --button-text: #000;
   --select-picker-background: #101114;
   --file-selector-button-background: #191a1d;
+  --alert-success-background: #15241c;
+  --alert-success-border: #3d9a64;
+  --alert-success-text: #c5e6d2;
+  --alert-warn-background: #2a2314;
+  --alert-warn-border: #c9a227;
+  --alert-warn-text: #ead9a0;
+  --alert-error-background: #2a1618;
+  --alert-error-border: #d45454;
+  --alert-error-text: #f0c0c0;
+  --alert-info-background: #1a2338;
+  --alert-info-border: #2f6feb;
+  --alert-info-text: #c5d4f5;
 }
 
 .light {
@@ -77,4 +89,16 @@
   --button-text: #242424;
   --select-picker-background: #fff;
   --file-selector-button-background: #f0f0f0;
+  --alert-success-background: #eaf6ef;
+  --alert-success-border: #2d8a52;
+  --alert-success-text: #1a5c35;
+  --alert-warn-background: #fbf6e8;
+  --alert-warn-border: #c49212;
+  --alert-warn-text: #6b5208;
+  --alert-error-background: #fbeeee;
+  --alert-error-border: #c43c3c;
+  --alert-error-text: #8a1f1f;
+  --alert-info-background: #eef3fc;
+  --alert-info-border: #2f6feb;
+  --alert-info-text: #1a3a7a;
 }
