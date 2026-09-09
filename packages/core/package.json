@@ -1,6 +1,6 @@
 {
   "name": "@octaneui/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Core components for Octane UI",
   "license": "ISC",
@@ -40,6 +40,7 @@
     "./disclosure": "./src/components/Disclosure.tsrx",
     "./tabs": "./src/components/Tabs.tsrx",
     "./dialog": "./src/components/Dialog.tsrx",
+    "./popover": "./src/components/Popover.tsrx",
     "./styles.css": "./src/styles.css"
   },
   "scripts": {

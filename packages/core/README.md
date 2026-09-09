@@ -36,7 +36,7 @@ Names follow `--scope-property-state`: the scope identifies the page, shared con
 | `--control-padding-inline` | Padding at the start and end of controls. |
 | `--control-gap` | Space between labels, icons, and control content. |
 | `--control-font-size` | Control text size. |
-| `--control-background` | Default control background, also used by dialogs and disclosures. |
+| `--control-background` | Default control background, also used by dialogs, popovers, and disclosures. |
 | `--control-background-active` | Highlighted select options (hovered, focused, or selected). |
 | `--control-border` | Default control border color. |
 | `--control-border-hover` | Hovered control border color. Defaults to a mix of the normal and focus borders. |

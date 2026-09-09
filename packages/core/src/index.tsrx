@@ -27,6 +27,7 @@ export {
   type DisclosureProps,
 } from "./components/Disclosure.tsrx";
 export { Dialog, type DialogProps } from "./components/Dialog.tsrx";
+export { Popover, type PopoverProps } from "./components/Popover.tsrx";
 export {
   Tabs,
   TabList,
