@@ -1,4 +1,4 @@
-@import "octane-ui/styles.css";
+@import "@octaneui/core/styles.css";
 
 :root {
   --header-background: rgba(1, 2, 4, 0.45);

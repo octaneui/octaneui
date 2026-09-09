@@ -1,11 +1,11 @@
 # Octane UI theming
 
-Import `octane-ui/styles.css`, then override its CSS custom properties in your stylesheet. The default theme is dark; apply `.light` to the document root or a container for the light theme. Both theme blocks explicitly declare the complete variable set in the same order with the same comments and non-color values; the light theme does not rely on inherited defaults.
+Import `@octaneui/core/styles.css`, then override its CSS custom properties in your stylesheet. The default theme is dark; apply `.light` to the document root or a container for the light theme. Both theme blocks explicitly declare the complete variable set in the same order with the same comments and non-color values; the light theme does not rely on inherited defaults.
 
 Names follow `--scope-property-state`: the scope identifies the page, shared controls, or a specific component; the property explains what changes; an optional state such as `hover` or `focus` comes last. Words such as `background`, `text`, and `padding` are spelled out. `--control-accent` is the shared blue selection/progress color in both themes.
 
 ```css
-@import "octane-ui/styles.css";
+@import "@octaneui/core/styles.css";
 
 :root {
   --control-accent: #2f6feb;
