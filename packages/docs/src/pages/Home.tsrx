@@ -43,7 +43,7 @@ const COMPONENTS: { name: string; href: string; Icon: LucideIcon }[] = [
 export function Home() @{
   <section class="page">
     <h1 class="title">Octane UI</h1>
-    <p class="lede">A component library for Octane.</p>
+    <p class="lede">A component library for <a href="https://octanejs.dev" target="_blank" rel="noopener noreferrer">Octane.</a></p>
 
     <h2 class="subtitle">Install</h2>
     <p class="lede">
