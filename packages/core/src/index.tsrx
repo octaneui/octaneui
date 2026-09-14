@@ -32,7 +32,11 @@ export { Textarea, type TextareaProps } from "./components/Textarea.tsrx";
 export { Color, type ColorProps } from "./components/Color.tsrx";
 export { FileInput, type FileInputProps } from "./components/FileInput.tsrx";
 export { Progress, type ProgressProps } from "./components/Progress.tsrx";
-export { Loading, type LoadingProps } from "./components/Loading.tsrx";
+export {
+  Loading,
+  type LoadingProps,
+  type LoadingSize,
+} from "./components/Loading.tsrx";
 export {
   Pagination,
   type PaginationProps,
