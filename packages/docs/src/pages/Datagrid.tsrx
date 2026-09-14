@@ -55,8 +55,9 @@ export function DatagridDocs() @{
     <p>
       Update
       <code>data</code>
-      to filter, sort, or display fetched results. This example filters and
-      sorts outside the component. Supply a stable, unique
+      to filter, sort, paginate, or display fetched results. This example
+      filters, sorts, and paginates outside the component. Supply a stable,
+      unique
       <code>getRowId</code>
       so custom cells retain their identity.
     </p>

@@ -86,6 +86,11 @@ export default defineConfig({
         layout: "/src/Layout.tsrx",
       }),
       new RenderRoute({
+        path: "/components/pagination",
+        entry: ["PaginationDocs", "/src/pages/Pagination.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
         path: "/components/disclosure",
         entry: ["DisclosureDocs", "/src/pages/Disclosure.tsrx"],
         layout: "/src/Layout.tsrx",

@@ -8,6 +8,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/components/datagrid": "Datagrid",
   "/components/input": "Input",
   "/components/loading": "Loading",
+  "/components/pagination": "Pagination",
   "/components/button": "Button",
   "/components/select": "Select",
   "/components/slider": "Slider",
@@ -53,29 +54,32 @@ export function Layout(props: LayoutProps) @{
   <div class="shell">
     <title>{documentTitle(props.url)}</title>
     <nav class="nav">
-      <a class="nav-link" href="/" title="Octane UI"><OctaneUILogo width={16} height={16} fill="var(--text-primary)" /></a>
-      <a class="nav-link" href="/components/alert">Alert</a>
-      <a class="nav-link" href="/components/button">Button</a>
-      <a class="nav-link" href="/components/calendar">Calendar</a>
-      <a class="nav-link" href="/components/checkbox">Checkbox</a>
-      <a class="nav-link" href="/components/color">Color</a>
-      <a class="nav-link" href="/components/datagrid">Datagrid</a>
-      <a class="nav-link" href="/components/dialog">Dialog</a>
-      <a class="nav-link" href="/components/disclosure">Disclosure</a>
-      <a class="nav-link" href="/components/file-input">File</a>
-      <a class="nav-link" href="/icons/lucide">Icons</a>
-      <a class="nav-link" href="/components/input">Input</a>
-      <a class="nav-link" href="/components/loading">Loading</a>
-      <a class="nav-link" href="/components/popover">Popover</a>
-      <a class="nav-link" href="/components/progress">Progress</a>
-      <a class="nav-link" href="/components/radio">Radio</a>
-      <a class="nav-link" href="/components/select">Select</a>
-      <a class="nav-link" href="/components/slider">Slider</a>
-      <a class="nav-link" href="/components/switch">Switch</a>
-      <a class="nav-link" href="/components/tabs">Tabs</a>
-      <a class="nav-link" href="/components/textarea">Textarea</a>
-      <a class="nav-link" href="/components/time">Time</a>
-      <a class="nav-link" href="/components/toast">Toast</a>
+      <a class="nav-brand" href="/" title="Octane UI"><OctaneUILogo width={16} height={16} fill="var(--text-primary)" /></a>
+      <div class="nav-links">
+        <a class="nav-link" href="/components/alert">Alert</a>
+        <a class="nav-link" href="/components/button">Button</a>
+        <a class="nav-link" href="/components/calendar">Calendar</a>
+        <a class="nav-link" href="/components/checkbox">Checkbox</a>
+        <a class="nav-link" href="/components/color">Color</a>
+        <a class="nav-link" href="/components/datagrid">Datagrid</a>
+        <a class="nav-link" href="/components/dialog">Dialog</a>
+        <a class="nav-link" href="/components/disclosure">Disclosure</a>
+        <a class="nav-link" href="/components/file-input">File</a>
+        <a class="nav-link" href="/icons/lucide">Icons</a>
+        <a class="nav-link" href="/components/input">Input</a>
+        <a class="nav-link" href="/components/loading">Loading</a>
+        <a class="nav-link" href="/components/pagination">Pagination</a>
+        <a class="nav-link" href="/components/popover">Popover</a>
+        <a class="nav-link" href="/components/progress">Progress</a>
+        <a class="nav-link" href="/components/radio">Radio</a>
+        <a class="nav-link" href="/components/select">Select</a>
+        <a class="nav-link" href="/components/slider">Slider</a>
+        <a class="nav-link" href="/components/switch">Switch</a>
+        <a class="nav-link" href="/components/tabs">Tabs</a>
+        <a class="nav-link" href="/components/textarea">Textarea</a>
+        <a class="nav-link" href="/components/time">Time</a>
+        <a class="nav-link" href="/components/toast">Toast</a>
+      </div>
       <button
         type="button"
         class="theme-toggle"
@@ -103,8 +107,7 @@ export function Layout(props: LayoutProps) @{
         top: 0;
         z-index: 1;
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         gap: 0.65rem 1rem;
         min-height: 60px;
         padding: 0.65rem 1.5rem;
@@ -112,7 +115,22 @@ export function Layout(props: LayoutProps) @{
         background: var(--header-background);
         backdrop-filter: blur(8px);
       }
+      .nav-brand {
+        display: inline-flex;
+        flex-shrink: 0;
+        align-items: center;
+        height: 2.25rem;
+      }
+      .nav-links {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.65rem 1rem;
+        min-width: 0;
+      }
       .nav-link {
+        flex-shrink: 0;
         color: var(--text-secondary);
         font-size: 0.9rem;
         font-weight: 500;
@@ -121,7 +139,6 @@ export function Layout(props: LayoutProps) @{
         color: var(--text-link);
       }
       .theme-toggle {
-        margin-left: auto;
         display: inline-flex;
         flex-shrink: 0;
         align-items: center;

@@ -34,6 +34,10 @@ export { FileInput, type FileInputProps } from "./components/FileInput.tsrx";
 export { Progress, type ProgressProps } from "./components/Progress.tsrx";
 export { Loading, type LoadingProps } from "./components/Loading.tsrx";
 export {
+  Pagination,
+  type PaginationProps,
+} from "./components/Pagination.tsrx";
+export {
   Disclosure,
   type DisclosureProps,
 } from "./components/Disclosure.tsrx";
