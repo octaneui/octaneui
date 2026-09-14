@@ -24,6 +24,7 @@
   "types": "./src/index.tsrx",
   "exports": {
     ".": "./src/index.tsrx",
+    "./datagrid": "./src/components/Datagrid.tsrx",
     "./button": "./src/components/Button.tsrx",
     "./input": "./src/components/Input.tsrx",
     "./select": "./src/components/Select.tsrx",
@@ -37,6 +38,7 @@
     "./color": "./src/components/Color.tsrx",
     "./file-input": "./src/components/FileInput.tsrx",
     "./progress": "./src/components/Progress.tsrx",
+    "./loading": "./src/components/Loading.tsrx",
     "./disclosure": "./src/components/Disclosure.tsrx",
     "./tabs": "./src/components/Tabs.tsrx",
     "./dialog": "./src/components/Dialog.tsrx",
@@ -46,6 +48,7 @@
     "./styles.css": "./src/styles.css"
   },
   "scripts": {
+    "test": "bun test tests",
     "typecheck": "tsrx-tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {

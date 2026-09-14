@@ -1,5 +1,15 @@
 import "./styles.css";
 
+export {
+  Datagrid,
+  type DatagridProps,
+  type DatagridColumnDef,
+  type DatagridColumn,
+  type DatagridColumnGroup,
+  type DatagridCellContext,
+  type DatagridPin,
+} from "./components/Datagrid.tsrx";
+
 export { Input, type InputProps } from "./components/Input.tsrx";
 export { Button, type ButtonProps } from "./components/Button.tsrx";
 export { Select, type SelectProps } from "./components/Select.tsrx";
@@ -22,6 +32,7 @@ export { Textarea, type TextareaProps } from "./components/Textarea.tsrx";
 export { Color, type ColorProps } from "./components/Color.tsrx";
 export { FileInput, type FileInputProps } from "./components/FileInput.tsrx";
 export { Progress, type ProgressProps } from "./components/Progress.tsrx";
+export { Loading, type LoadingProps } from "./components/Loading.tsrx";
 export {
   Disclosure,
   type DisclosureProps,

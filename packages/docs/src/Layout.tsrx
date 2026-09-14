@@ -5,7 +5,9 @@ import { OctaneUILogo } from "./OctaneUILogo.tsrx";
 const SITE_TITLE = "Octane UI";
 
 const PAGE_TITLES: Record<string, string> = {
+  "/components/datagrid": "Datagrid",
   "/components/input": "Input",
+  "/components/loading": "Loading",
   "/components/button": "Button",
   "/components/select": "Select",
   "/components/slider": "Slider",
@@ -57,11 +59,13 @@ export function Layout(props: LayoutProps) @{
       <a class="nav-link" href="/components/calendar">Calendar</a>
       <a class="nav-link" href="/components/checkbox">Checkbox</a>
       <a class="nav-link" href="/components/color">Color</a>
+      <a class="nav-link" href="/components/datagrid">Datagrid</a>
       <a class="nav-link" href="/components/dialog">Dialog</a>
       <a class="nav-link" href="/components/disclosure">Disclosure</a>
       <a class="nav-link" href="/components/file-input">File</a>
       <a class="nav-link" href="/icons/lucide">Icons</a>
       <a class="nav-link" href="/components/input">Input</a>
+      <a class="nav-link" href="/components/loading">Loading</a>
       <a class="nav-link" href="/components/popover">Popover</a>
       <a class="nav-link" href="/components/progress">Progress</a>
       <a class="nav-link" href="/components/radio">Radio</a>

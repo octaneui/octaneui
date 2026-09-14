@@ -37,6 +37,7 @@
   --control-focus-shadow: 0 0 0 3px #ffffff30;
 
   /* Component-specific surfaces. */
+  --datagrid-header-background: #1c1e22;
   --button-background: #fff;
   --button-background-hover: #e8e8e8;
   --button-text: #000;
@@ -98,6 +99,7 @@
   --control-focus-shadow: 0 0 0 3px #d4d4d420;
 
   /* Component-specific surfaces. */
+  --datagrid-header-background: #f1f1f1;
   --button-background: #fff;
   --button-background-hover: #f1f1f1;
   --button-text: #242424;

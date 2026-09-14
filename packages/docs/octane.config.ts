@@ -6,6 +6,11 @@ export default defineConfig({
   router: {
     routes: [
       new RenderRoute({
+        path: "/components/datagrid",
+        entry: ["DatagridDocs", "/src/pages/Datagrid.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
         path: "/",
         entry: ["Home", "/src/pages/Home.tsrx"],
         layout: "/src/Layout.tsrx",
@@ -73,6 +78,11 @@ export default defineConfig({
       new RenderRoute({
         path: "/components/progress",
         entry: ["ProgressDocs", "/src/pages/Progress.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
+        path: "/components/loading",
+        entry: ["LoadingDocs", "/src/pages/Loading.tsrx"],
         layout: "/src/Layout.tsrx",
       }),
       new RenderRoute({
