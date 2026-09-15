@@ -40,36 +40,36 @@ export function Alert({
       .root {
         display: flex;
         align-items: center;
-        gap: var(--control-gap);
+        gap: var(--oc-control-gap);
         box-sizing: border-box;
         width: 100%;
-        padding: 0.75rem var(--control-padding-inline);
-        border: 1px solid var(--alert-info-border);
-        border-radius: var(--border-radius);
-        background: var(--alert-info-background);
-        color: var(--alert-info-text);
-        font-size: var(--control-font-size);
+        padding: 0.75rem var(--oc-control-padding-inline);
+        border: 1px solid var(--oc-alert-info-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-alert-info-background);
+        color: var(--oc-alert-info-text);
+        font-size: var(--oc-control-font-size);
         line-height: 1.4;
       }
       .success {
-        border-color: var(--alert-success-border);
-        background: var(--alert-success-background);
-        color: var(--alert-success-text);
+        border-color: var(--oc-alert-success-border);
+        background: var(--oc-alert-success-background);
+        color: var(--oc-alert-success-text);
       }
       .warn {
-        border-color: var(--alert-warn-border);
-        background: var(--alert-warn-background);
-        color: var(--alert-warn-text);
+        border-color: var(--oc-alert-warn-border);
+        background: var(--oc-alert-warn-background);
+        color: var(--oc-alert-warn-text);
       }
       .error {
-        border-color: var(--alert-error-border);
-        background: var(--alert-error-background);
-        color: var(--alert-error-text);
+        border-color: var(--oc-alert-error-border);
+        background: var(--oc-alert-error-background);
+        color: var(--oc-alert-error-text);
       }
       .info {
-        border-color: var(--alert-info-border);
-        background: var(--alert-info-background);
-        color: var(--alert-info-text);
+        border-color: var(--oc-alert-info-border);
+        background: var(--oc-alert-info-background);
+        color: var(--oc-alert-info-text);
       }
       .body {
         flex: 1;

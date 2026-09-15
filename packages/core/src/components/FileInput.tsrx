@@ -23,23 +23,23 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
         align-items: center;
         box-sizing: border-box;
         width: 100%;
-        min-height: var(--control-height);
-        padding-inline-end: var(--control-padding-inline);
-        border: 1px solid var(--control-border);
-        border-radius: var(--border-radius);
-        background: var(--control-background);
-        color: var(--control-text-primary);
-        font-size: var(--control-font-size);
+        min-height: var(--oc-control-height);
+        padding-inline-end: var(--oc-control-padding-inline);
+        border: 1px solid var(--oc-control-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-control-background);
+        color: var(--oc-control-text-primary);
+        font-size: var(--oc-control-font-size);
         overflow: hidden;
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
       .root:not(:has(.field:focus-visible)):has(.field:enabled):hover {
-        border-color: var(--control-border-hover);
+        border-color: var(--oc-control-border-hover);
       }
       .root:has(.field:focus-visible) {
-        border-color: var(--control-border-focus);
+        border-color: var(--oc-control-border-focus);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -62,14 +62,14 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
         cursor: not-allowed;
       }
       .field::file-selector-button {
-        height: var(--control-height);
-        margin-right: var(--control-gap);
+        height: var(--oc-control-height);
+        margin-right: var(--oc-control-gap);
         padding-block: 0;
-        padding-inline: var(--control-padding-inline);
+        padding-inline: var(--oc-control-padding-inline);
         border: 0;
         border-radius: 0;
-        border-right: 1px solid var(--control-border);
-        background: var(--file-selector-button-background);
+        border-right: 1px solid var(--oc-control-border);
+        background: var(--oc-file-selector-button-background);
         color: inherit;
         font: inherit;
         font-weight: 600;
@@ -84,10 +84,10 @@ export function FileInput({ left, style, ...rest }: FileInputProps) @{
         align-items: center;
         justify-content: center;
         align-self: stretch;
-        height: var(--control-height);
-        padding-inline-start: var(--control-padding-inline);
-        background: var(--file-selector-button-background);
-        color: var(--control-text-primary);
+        height: var(--oc-control-height);
+        padding-inline-start: var(--oc-control-padding-inline);
+        background: var(--oc-file-selector-button-background);
+        color: var(--oc-control-text-primary);
         line-height: 1;
         pointer-events: none;
       }

@@ -96,21 +96,21 @@ export function IconGallery() @{
         width: 100%;
         min-height: 2.5rem;
         padding: 0 0.875rem;
-        border: 1px solid var(--border-color);
-        border-radius: var(--border-radius);
-        background: var(--surface-background);
-        color: var(--text-primary);
+        border: 1px solid var(--oc-border-color);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-surface-background);
+        color: var(--oc-text-primary);
         font-family: inherit;
         font-size: 0.9375rem;
       }
       .gallery-input:focus-visible {
         outline: none;
-        border-color: var(--text-primary);
+        border-color: var(--oc-text-primary);
       }
       .gallery-hint,
       .gallery-count {
         margin: 0;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
         font-size: 0.875rem;
       }
       .gallery-grid {
@@ -127,9 +127,9 @@ export function IconGallery() @{
         align-items: center;
         gap: 0.5rem;
         padding: 1rem 0.75rem;
-        border: 1px solid var(--border-color);
-        border-radius: var(--border-radius);
-        background: var(--surface-background);
+        border: 1px solid var(--oc-border-color);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-surface-background);
         text-align: center;
       }
       .gallery-placeholder {
@@ -140,24 +140,24 @@ export function IconGallery() @{
       .gallery-name {
         overflow: hidden;
         width: 100%;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
         font-size: 0.75rem;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
       .gallery-copy {
         padding: 0.3rem 0.6rem;
-        border: 1px solid var(--border-color);
-        border-radius: calc(var(--border-radius) - 0.2rem);
+        border: 1px solid var(--oc-border-color);
+        border-radius: calc(var(--oc-border-radius) - 0.2rem);
         background: transparent;
-        color: var(--text-primary);
+        color: var(--oc-text-primary);
         font-family: inherit;
         font-size: 0.75rem;
         cursor: pointer;
       }
       .gallery-copy:hover {
-        border-color: var(--text-primary);
-        color: var(--text-link);
+        border-color: var(--oc-text-primary);
+        color: var(--oc-text-link);
       }
     </style>
   </div>

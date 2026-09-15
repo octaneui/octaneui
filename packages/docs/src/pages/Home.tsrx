@@ -88,7 +88,7 @@ export function Home() @{
       }
       .lede {
         margin: 0 0 1.5rem;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
         font-size: 1.15rem;
       }
       .links {
@@ -104,16 +104,16 @@ export function Home() @{
         align-items: center;
         gap: 0.5rem;
         padding: 0.7rem 0.9rem;
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--oc-border-color);
         border-radius: 0.9rem;
-        background: var(--surface-background);
-        color: var(--text-primary);
+        background: var(--oc-surface-background);
+        color: var(--oc-text-primary);
         font-weight: 600;
         white-space: nowrap;
       }
       .link:hover {
-        border-color: var(--surface-background-hover);
-        background: var(--surface-background-hover);
+        border-color: var(--oc-surface-background-hover);
+        background: var(--oc-surface-background-hover);
       }
       .link :where(svg) {
         flex-shrink: 0;

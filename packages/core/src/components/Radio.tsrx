@@ -32,9 +32,9 @@ export function Radio({ children, style, ...rest }: RadioProps) @{
         position: relative;
         display: inline-flex;
         align-items: center;
-        gap: var(--control-gap);
-        color: var(--control-text-primary);
-        font-size: var(--control-font-size);
+        gap: var(--oc-control-gap);
+        color: var(--oc-control-text-primary);
+        font-size: var(--oc-control-font-size);
         line-height: 1.3;
         cursor: pointer;
         user-select: none;
@@ -62,9 +62,9 @@ export function Radio({ children, style, ...rest }: RadioProps) @{
         box-sizing: border-box;
         width: 1.125rem;
         height: 1.125rem;
-        border: 1px solid var(--control-border);
+        border: 1px solid var(--oc-control-border);
         border-radius: 50%;
-        background: var(--control-background);
+        background: var(--oc-control-background);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
@@ -74,16 +74,16 @@ export function Radio({ children, style, ...rest }: RadioProps) @{
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 50%;
-        background: var(--control-accent);
+        background: var(--oc-control-accent);
       }
       .field:checked + .box {
-        border-color: var(--control-border-focus);
+        border-color: var(--oc-control-border-focus);
       }
       .root:not(:has(.field:focus-visible)):has(.field:enabled):hover .field:not(:checked) + .box {
-        border-color: var(--control-border-hover);
+        border-color: var(--oc-control-border-hover);
       }
       .root:has(.field:focus-visible) .box {
-        outline: 1px solid var(--control-accent);
+        outline: 1px solid var(--oc-control-accent);
       }
     </style>
   </label>
@@ -111,8 +111,8 @@ export function RadioGroup({
       .legend {
         padding: 0;
         margin-bottom: 0.5rem;
-        color: var(--control-text-primary);
-        font-size: var(--control-font-size);
+        color: var(--oc-control-text-primary);
+        font-size: var(--oc-control-font-size);
         font-weight: 600;
       }
       .options {

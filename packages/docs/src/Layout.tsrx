@@ -55,7 +55,7 @@ export function Layout(props: LayoutProps) @{
   <div class="shell">
     <title>{documentTitle(props.url)}</title>
     <nav class="nav">
-      <a class="nav-brand" href="/" title="Octane UI"><OctaneUILogo width={16} height={16} fill="var(--text-primary)" /></a>
+      <a class="nav-brand" href="/" title="Octane UI"><OctaneUILogo width={16} height={16} fill="var(--oc-text-primary)" /></a>
       <div class="nav-links">
         <a class="nav-link" href="/components/alert">Alert</a>
         <a class="nav-link" href="/components/button">Button</a>
@@ -113,7 +113,7 @@ export function Layout(props: LayoutProps) @{
         gap: 0.65rem 1rem;
         min-height: 60px;
         padding: 0.65rem 1.5rem;
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--oc-border-color);
         background: var(--header-background);
         backdrop-filter: blur(8px);
       }
@@ -133,12 +133,12 @@ export function Layout(props: LayoutProps) @{
       }
       .nav-link {
         flex-shrink: 0;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
         font-size: 0.9rem;
         font-weight: 500;
       }
       .nav-link:hover {
-        color: var(--text-link);
+        color: var(--oc-text-link);
       }
       .theme-toggle {
         display: inline-flex;
@@ -149,13 +149,13 @@ export function Layout(props: LayoutProps) @{
         height: 2.25rem;
         padding: 0;
         border: 0;
-        border-radius: var(--border-radius);
+        border-radius: var(--oc-border-radius);
         background: transparent;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
         cursor: pointer;
       }
       .theme-toggle:hover {
-        color: var(--text-link);
+        color: var(--oc-text-link);
       }
       .theme-toggle:focus-visible {
         outline: none;

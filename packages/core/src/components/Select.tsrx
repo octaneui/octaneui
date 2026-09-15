@@ -29,26 +29,26 @@ export function Select({
         --select-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
         display: flex;
         align-items: center;
-        gap: var(--control-gap);
+        gap: var(--oc-control-gap);
         box-sizing: border-box;
         width: 100%;
-        min-height: var(--control-height);
+        min-height: var(--oc-control-height);
         padding-block: 0;
-        padding-inline: var(--control-padding-inline);
-        border: 1px solid var(--control-border);
-        border-radius: var(--border-radius);
-        background: var(--control-background);
-        color: var(--control-text-primary);
-        font-size: var(--control-font-size);
+        padding-inline: var(--oc-control-padding-inline);
+        border: 1px solid var(--oc-control-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-control-background);
+        color: var(--oc-control-text-primary);
+        font-size: var(--oc-control-font-size);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
       .root:not(:has(.field:focus-visible)):has(.field:enabled):hover {
-        border-color: var(--control-border-hover);
+        border-color: var(--oc-control-border-hover);
       }
       .root:has(.field:focus-visible) {
-        border-color: var(--control-border-focus);
+        border-color: var(--oc-control-border-focus);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -58,7 +58,7 @@ export function Select({
         flex: 1;
         min-width: 0;
         width: 100%;
-        height: var(--control-height);
+        height: var(--oc-control-height);
         margin: 0;
         padding: 0;
         border: 0;
@@ -77,7 +77,7 @@ export function Select({
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        color: var(--control-text-primary);
+        color: var(--oc-control-text-primary);
         line-height: 1;
         pointer-events: none;
       }
@@ -93,7 +93,7 @@ export function Select({
         flex-shrink: 0;
         width: 1rem;
         height: 1rem;
-        background-color: var(--control-text-primary);
+        background-color: var(--oc-control-text-primary);
         mask: var(--select-icon) center / 1rem no-repeat;
         pointer-events: none;
       }
@@ -116,7 +116,7 @@ export function Select({
           width: 1rem;
           height: 1rem;
           margin-inline-start: auto;
-          background-color: var(--control-text-primary);
+          background-color: var(--oc-control-text-primary);
           mask: var(--select-icon) center / 1rem no-repeat;
           transition: rotate 0.15s ease;
         }
@@ -127,10 +127,10 @@ export function Select({
           box-sizing: border-box;
           margin: 0;
           padding: 0.25rem;
-          border: 1px solid var(--control-border);
-          border-radius: var(--border-radius);
-          background: var(--select-picker-background);
-          color: var(--control-text-primary);
+          border: 1px solid var(--oc-control-border);
+          border-radius: var(--oc-border-radius);
+          background: var(--oc-select-picker-background);
+          color: var(--oc-control-text-primary);
           font: inherit;
           min-width: anchor-size(width);
           max-height: min(20rem, 70vh);
@@ -160,19 +160,19 @@ export function Select({
           background: transparent;
           /* Affects the optgroup label as .field :global(option) is more specific
           for the actual option text. */
-          color: var(--control-text-secondary);
+          color: var(--oc-control-text-secondary);
           font: inherit;
           font-style: normal;
         }
         .field :global(option) {
           display: flex;
           align-items: center;
-          gap: var(--control-gap);
+          gap: var(--oc-control-gap);
           padding: 0.5rem 0.625rem;
           border: 0;
-          border-radius: calc(var(--border-radius) - 0.125rem);
+          border-radius: calc(var(--oc-border-radius) - 0.125rem);
           background: transparent;
-          color: var(--control-text-primary);
+          color: var(--oc-control-text-primary);
           font: inherit;
           font-style: normal;
           font-weight: normal;
@@ -184,7 +184,7 @@ export function Select({
         .field :global(option:checked),
         .field :global(option:checked:hover),
         .field :global(option:checked:focus) {
-          background: var(--control-background-active);
+          background: var(--oc-control-background-active);
         }
         .field :global(option:disabled) {
           opacity: 0.5;
@@ -193,7 +193,7 @@ export function Select({
         .field :global(option)::checkmark {
           order: 1;
           margin-inline-start: auto;
-          color: var(--control-text-primary);
+          color: var(--oc-control-text-primary);
         }
       }
     </style>

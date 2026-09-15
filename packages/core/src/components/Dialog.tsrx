@@ -17,10 +17,10 @@ export function Dialog({ children, style, ...rest }: DialogProps) @{
         width: min(28rem, calc(100% - 2rem));
         margin: auto;
         padding: 1.25rem;
-        border: 1px solid var(--control-border);
-        border-radius: var(--border-radius);
-        background: var(--control-background);
-        color: var(--control-text-primary);
+        border: 1px solid var(--oc-control-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-control-background);
+        color: var(--oc-control-text-primary);
         box-shadow: 0 0.75rem 1.75rem rgb(0 0 0 / 0.45);
       }
       .root::backdrop {

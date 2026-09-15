@@ -1,132 +1,132 @@
 :root {
   /* Shared geometry and typography. */
-  --border-radius: 0.625rem;
-  --control-height: 2.75rem;
-  --control-padding-inline: 0.75rem;
-  --control-gap: 0.5rem;
-  --control-font-size: 0.9375rem;
+  --oc-border-radius: 0.625rem;
+  --oc-control-height: 2.75rem;
+  --oc-control-padding-inline: 0.75rem;
+  --oc-control-gap: 0.5rem;
+  --oc-control-font-size: 0.9375rem;
 }
 
 :root {
   /* Selection and progress. Text is drawn on the accent background. */
-  --control-accent: #2f6feb;
-  --control-accent-text: #fff;
+  --oc-control-accent: #2f6feb;
+  --oc-control-accent-text: #fff;
 
   /* Page surfaces and content. */
-  --page-background: #16181c;
-  --text-primary: #d8dade;
-  --text-secondary: #8c8c8c;
-  --text-link: #fff;
-  --border-color: #24262c;
-  --shadow-color: rgb(0 0 0 / 0.25);
-  --surface-background: rgba(255, 255, 255, 0.03);
-  --surface-background-hover: #303134;
+  --oc-page-background: #16181c;
+  --oc-text-primary: #d8dade;
+  --oc-text-secondary: #8c8c8c;
+  --oc-text-link: #fff;
+  --oc-border-color: #24262c;
+  --oc-shadow-color: rgb(0 0 0 / 0.25);
+  --oc-surface-background: rgba(255, 255, 255, 0.03);
+  --oc-surface-background-hover: #303134;
 
   /* Shared control surfaces, content, and interaction states. */
-  --control-background: #151619;
-  --control-background-active: #303134;
-  --control-border: #323334;
-  --control-border-hover: #404347;
-  --control-border-focus: #2f6feb;
-  --control-text-primary: #d8dade;
-  --control-text-secondary: #676767;
-  --control-placeholder-text: #47484b;
-  --control-track-background: #303134;
-  --control-thumb-background: #fff;
+  --oc-control-background: #151619;
+  --oc-control-background-active: #303134;
+  --oc-control-border: #323334;
+  --oc-control-border-hover: #404347;
+  --oc-control-border-focus: #2f6feb;
+  --oc-control-text-primary: #d8dade;
+  --oc-control-text-secondary: #676767;
+  --oc-control-placeholder-text: #47484b;
+  --oc-control-track-background: #303134;
+  --oc-control-thumb-background: #fff;
   /* A complete box-shadow value for keyboard/input focus. */
-  --control-focus-shadow: 0 0 0 3px #ffffff30;
+  --oc-control-focus-shadow: 0 0 0 3px #ffffff30;
 
   /* Component-specific surfaces. */
-  --datagrid-header-background: #1c1e22;
-  --button-background: #fff;
-  --button-background-hover: #e8e8e8;
-  --button-text: #000;
-  --select-picker-background: #101114;
-  --file-selector-button-background: #191a1d;
-  --alert-success-background: #15241c;
-  --alert-success-border: #3d9a64;
-  --alert-success-text: #c5e6d2;
-  --alert-warn-background: #2a2314;
-  --alert-warn-border: #c9a227;
-  --alert-warn-text: #ead9a0;
-  --alert-error-background: #2a1618;
-  --alert-error-border: #d45454;
-  --alert-error-text: #f0c0c0;
-  --alert-info-background: #1a2338;
-  --alert-info-border: #2f6feb;
-  --alert-info-text: #c5d4f5;
-  --toast-success-background: #15241c;
-  --toast-success-border: #3d9a64;
-  --toast-success-text: #c5e6d2;
-  --toast-warn-background: #2a2314;
-  --toast-warn-border: #c9a227;
-  --toast-warn-text: #ead9a0;
-  --toast-error-background: #2a1618;
-  --toast-error-border: #d45454;
-  --toast-error-text: #f0c0c0;
-  --toast-info-background: #1a2338;
-  --toast-info-border: #2f6feb;
-  --toast-info-text: #c5d4f5;
+  --oc-datagrid-header-background: #1c1e22;
+  --oc-button-background: #fff;
+  --oc-button-background-hover: #e8e8e8;
+  --oc-button-text: #000;
+  --oc-select-picker-background: #101114;
+  --oc-file-selector-button-background: #191a1d;
+  --oc-alert-success-background: #15241c;
+  --oc-alert-success-border: #3d9a64;
+  --oc-alert-success-text: #c5e6d2;
+  --oc-alert-warn-background: #2a2314;
+  --oc-alert-warn-border: #c9a227;
+  --oc-alert-warn-text: #ead9a0;
+  --oc-alert-error-background: #2a1618;
+  --oc-alert-error-border: #d45454;
+  --oc-alert-error-text: #f0c0c0;
+  --oc-alert-info-background: #1a2338;
+  --oc-alert-info-border: #2f6feb;
+  --oc-alert-info-text: #c5d4f5;
+  --oc-toast-success-background: #15241c;
+  --oc-toast-success-border: #3d9a64;
+  --oc-toast-success-text: #c5e6d2;
+  --oc-toast-warn-background: #2a2314;
+  --oc-toast-warn-border: #c9a227;
+  --oc-toast-warn-text: #ead9a0;
+  --oc-toast-error-background: #2a1618;
+  --oc-toast-error-border: #d45454;
+  --oc-toast-error-text: #f0c0c0;
+  --oc-toast-info-background: #1a2338;
+  --oc-toast-info-border: #2f6feb;
+  --oc-toast-info-text: #c5d4f5;
 }
 
 .light {
   /* Selection and progress. Text is drawn on the accent background. */
-  --control-accent: #2f6feb;
-  --control-accent-text: #fff;
+  --oc-control-accent: #2f6feb;
+  --oc-control-accent-text: #fff;
 
   /* Page surfaces and content. */
-  --page-background: #fff;
-  --text-primary: #242424;
-  --text-secondary: #7e7e7e;
-  --text-link: #474747;
-  --border-color: #cdcdcd;
-  --shadow-color: rgb(0 0 0 / 0.15);
-  --surface-background: rgba(255, 255, 255, 0.03);
-  --surface-background-hover: #d9d9d9;
+  --oc-page-background: #fff;
+  --oc-text-primary: #242424;
+  --oc-text-secondary: #7e7e7e;
+  --oc-text-link: #474747;
+  --oc-border-color: #cdcdcd;
+  --oc-shadow-color: rgb(0 0 0 / 0.15);
+  --oc-surface-background: rgba(255, 255, 255, 0.03);
+  --oc-surface-background-hover: #d9d9d9;
 
   /* Shared control surfaces, content, and interaction states. */
-  --control-background: #fff;
-  --control-background-active: #f1f1f1;
-  --control-border: #cdcdcd;
-  --control-border-hover: #aeadad;
-  --control-border-focus: #2f6feb;
-  --control-text-primary: #242424;
-  --control-text-secondary: #7e7e7e;
-  --control-placeholder-text: #9c9c9c;
-  --control-track-background: #d9d9d9;
-  --control-thumb-background: #fff;
+  --oc-control-background: #fff;
+  --oc-control-background-active: #f1f1f1;
+  --oc-control-border: #cdcdcd;
+  --oc-control-border-hover: #aeadad;
+  --oc-control-border-focus: #2f6feb;
+  --oc-control-text-primary: #242424;
+  --oc-control-text-secondary: #7e7e7e;
+  --oc-control-placeholder-text: #9c9c9c;
+  --oc-control-track-background: #d9d9d9;
+  --oc-control-thumb-background: #fff;
   /* A complete box-shadow value for keyboard/input focus. */
-  --control-focus-shadow: 0 0 0 3px #d4d4d420;
+  --oc-control-focus-shadow: 0 0 0 3px #d4d4d420;
 
   /* Component-specific surfaces. */
-  --datagrid-header-background: #f1f1f1;
-  --button-background: #fff;
-  --button-background-hover: #f1f1f1;
-  --button-text: #242424;
-  --select-picker-background: #fff;
-  --file-selector-button-background: #f0f0f0;
-  --alert-success-background: #eaf6ef;
-  --alert-success-border: #2d8a52;
-  --alert-success-text: #1a5c35;
-  --alert-warn-background: #fbf6e8;
-  --alert-warn-border: #c49212;
-  --alert-warn-text: #6b5208;
-  --alert-error-background: #fbeeee;
-  --alert-error-border: #c43c3c;
-  --alert-error-text: #8a1f1f;
-  --alert-info-background: #eef3fc;
-  --alert-info-border: #2f6feb;
-  --alert-info-text: #1a3a7a;
-  --toast-success-background: #eaf6ef;
-  --toast-success-border: #2d8a52;
-  --toast-success-text: #1a5c35;
-  --toast-warn-background: #fbf6e8;
-  --toast-warn-border: #c49212;
-  --toast-warn-text: #6b5208;
-  --toast-error-background: #fbeeee;
-  --toast-error-border: #c43c3c;
-  --toast-error-text: #8a1f1f;
-  --toast-info-background: #eef3fc;
-  --toast-info-border: #2f6feb;
-  --toast-info-text: #1a3a7a;
+  --oc-datagrid-header-background: #f1f1f1;
+  --oc-button-background: #fff;
+  --oc-button-background-hover: #f1f1f1;
+  --oc-button-text: #242424;
+  --oc-select-picker-background: #fff;
+  --oc-file-selector-button-background: #f0f0f0;
+  --oc-alert-success-background: #eaf6ef;
+  --oc-alert-success-border: #2d8a52;
+  --oc-alert-success-text: #1a5c35;
+  --oc-alert-warn-background: #fbf6e8;
+  --oc-alert-warn-border: #c49212;
+  --oc-alert-warn-text: #6b5208;
+  --oc-alert-error-background: #fbeeee;
+  --oc-alert-error-border: #c43c3c;
+  --oc-alert-error-text: #8a1f1f;
+  --oc-alert-info-background: #eef3fc;
+  --oc-alert-info-border: #2f6feb;
+  --oc-alert-info-text: #1a3a7a;
+  --oc-toast-success-background: #eaf6ef;
+  --oc-toast-success-border: #2d8a52;
+  --oc-toast-success-text: #1a5c35;
+  --oc-toast-warn-background: #fbf6e8;
+  --oc-toast-warn-border: #c49212;
+  --oc-toast-warn-text: #6b5208;
+  --oc-toast-error-background: #fbeeee;
+  --oc-toast-error-border: #c43c3c;
+  --oc-toast-error-text: #8a1f1f;
+  --oc-toast-info-background: #eef3fc;
+  --oc-toast-info-border: #2f6feb;
+  --oc-toast-info-text: #1a3a7a;
 }

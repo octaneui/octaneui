@@ -87,13 +87,13 @@ export function Menu({
         min-width: 10rem;
         width: max-content;
         max-width: min(18rem, calc(100vw - 2rem));
-        margin-block: var(--control-gap);
+        margin-block: var(--oc-control-gap);
         inset: auto;
         padding: 0.25rem;
-        border: 1px solid var(--control-border);
-        border-radius: var(--border-radius);
-        background: var(--control-background);
-        color: var(--control-text-primary);
+        border: 1px solid var(--oc-control-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-control-background);
+        color: var(--oc-control-text-primary);
         box-shadow: 0 0.75rem 1.75rem rgb(0 0 0 / 0.45);
         position-area: bottom span-right;
         position-try-fallbacks: flip-block, flip-inline, flip-block flip-inline;
@@ -155,18 +155,18 @@ export function MenuItem({
       .item {
         display: flex;
         align-items: center;
-        gap: var(--control-gap);
+        gap: var(--oc-control-gap);
         box-sizing: border-box;
         width: 100%;
         min-height: 2.25rem;
         padding-block: 0;
-        padding-inline: var(--control-padding-inline);
+        padding-inline: var(--oc-control-padding-inline);
         border: 0;
-        border-radius: calc(var(--border-radius) - 0.125rem);
+        border-radius: calc(var(--oc-border-radius) - 0.125rem);
         background: transparent;
         color: inherit;
         font: inherit;
-        font-size: var(--control-font-size);
+        font-size: var(--oc-control-font-size);
         font-weight: 500;
         line-height: 1.3;
         text-align: start;
@@ -174,10 +174,10 @@ export function MenuItem({
         user-select: none;
       }
       .item:hover:not(:disabled) {
-        background: var(--control-background-active);
+        background: var(--oc-control-background-active);
       }
       .item:focus-visible {
-        outline: 2px solid var(--control-accent);
+        outline: 2px solid var(--oc-control-accent);
         outline-offset: -2px;
       }
       .item:disabled {
@@ -193,7 +193,7 @@ export function MenuItem({
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        color: var(--control-text-secondary);
+        color: var(--oc-control-text-secondary);
       }
       .slot :where(svg) {
         display: block;
@@ -219,7 +219,7 @@ export function MenuSeparator({ ...rest }: MenuSeparatorProps) @{
       .separator {
         height: 1px;
         margin: 0.25rem 0.5rem;
-        background: var(--control-border);
+        background: var(--oc-control-border);
       }
     </style>
   </div>

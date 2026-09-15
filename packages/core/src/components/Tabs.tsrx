@@ -76,7 +76,7 @@ export function TabList({ children, ...rest }: TabListProps) @{
     <style>
       .list {
         display: flex;
-        gap: var(--control-gap);
+        gap: var(--oc-control-gap);
         overflow-x: auto;
         padding: 0.25rem;
       }
@@ -130,26 +130,26 @@ export function Tab({
     <style>
       .tab {
         flex-shrink: 0;
-        min-height: var(--control-height);
-        padding: 0.35rem var(--control-padding-inline);
+        min-height: var(--oc-control-height);
+        padding: 0.35rem var(--oc-control-padding-inline);
         border: 1px solid transparent;
-        border-radius: var(--border-radius);
+        border-radius: var(--oc-border-radius);
         background: transparent;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
         font: inherit;
-        font-size: var(--control-font-size);
+        font-size: var(--oc-control-font-size);
         cursor: pointer;
       }
       .tab:hover:not(:disabled) {
-        background: var(--control-background-active);
-        color: var(--control-text-primary);
+        background: var(--oc-control-background-active);
+        color: var(--oc-control-text-primary);
       }
       .tab[aria-selected="true"] {
-        background: var(--control-background-active);
-        color: var(--control-text-primary);
+        background: var(--oc-control-background-active);
+        color: var(--oc-control-text-primary);
       }
       .tab:focus-visible {
-        outline: 2px solid var(--control-accent);
+        outline: 2px solid var(--oc-control-accent);
         outline-offset: 1px;
       }
       .tab:disabled {
@@ -191,15 +191,15 @@ export function TabPanel({ value, children, ...rest }: TabPanelProps) @{
     <style>
       .panel {
         padding-block: 1rem;
-        color: var(--control-text-primary);
+        color: var(--oc-control-text-primary);
       }
       .panel[hidden] {
         display: none;
       }
       .panel:focus-visible {
-        outline: 2px solid var(--control-accent);
+        outline: 2px solid var(--oc-control-accent);
         outline-offset: 2px;
-        border-radius: var(--border-radius);
+        border-radius: var(--oc-border-radius);
       }
     </style>
   </div>

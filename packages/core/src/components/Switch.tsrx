@@ -23,9 +23,9 @@ export function Switch({ children, style, ...rest }: SwitchProps) @{
         position: relative;
         display: inline-flex;
         align-items: center;
-        gap: var(--control-gap);
-        color: var(--control-text-primary);
-        font-size: var(--control-font-size);
+        gap: var(--oc-control-gap);
+        color: var(--oc-control-text-primary);
+        font-size: var(--oc-control-font-size);
         line-height: 1.3;
         cursor: pointer;
         user-select: none;
@@ -53,7 +53,7 @@ export function Switch({ children, style, ...rest }: SwitchProps) @{
         width: 2.5rem;
         height: 1.5rem;
         border-radius: 999px;
-        background: var(--control-track-background);
+        background: var(--oc-control-track-background);
         transition:
           background 0.15s ease,
           box-shadow 0.15s ease;
@@ -66,17 +66,17 @@ export function Switch({ children, style, ...rest }: SwitchProps) @{
         width: 1.25rem;
         height: 1.25rem;
         border-radius: 50%;
-        background: var(--control-thumb-background);
+        background: var(--oc-control-thumb-background);
         transition: translate 0.15s ease;
       }
       .field:checked + .track {
-        background: var(--control-accent);
+        background: var(--oc-control-accent);
       }
       .field:checked + .track::before {
         translate: 1rem 0;
       }
       .root:has(.field:focus-visible) .track {
-        outline: 1px solid var(--control-accent);
+        outline: 1px solid var(--oc-control-accent);
       }
     </style>
   </label>

@@ -56,38 +56,38 @@ export function Toast({
       .root {
         display: flex;
         align-items: center;
-        gap: var(--control-gap);
+        gap: var(--oc-control-gap);
         box-sizing: border-box;
         width: 100%;
-        padding: 0.75rem var(--control-padding-inline);
-        border: 1px solid var(--toast-info-border);
-        border-radius: var(--border-radius);
-        background: var(--toast-info-background);
-        color: var(--toast-info-text);
-        font-size: var(--control-font-size);
+        padding: 0.75rem var(--oc-control-padding-inline);
+        border: 1px solid var(--oc-toast-info-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-toast-info-background);
+        color: var(--oc-toast-info-text);
+        font-size: var(--oc-control-font-size);
         line-height: 1.4;
-        box-shadow: 0 0.5rem 1rem var(--shadow-color);
+        box-shadow: 0 0.5rem 1rem var(--oc-shadow-color);
         animation: toast-in 0.2s ease;
       }
       .success {
-        border-color: var(--toast-success-border);
-        background: var(--toast-success-background);
-        color: var(--toast-success-text);
+        border-color: var(--oc-toast-success-border);
+        background: var(--oc-toast-success-background);
+        color: var(--oc-toast-success-text);
       }
       .warn {
-        border-color: var(--toast-warn-border);
-        background: var(--toast-warn-background);
-        color: var(--toast-warn-text);
+        border-color: var(--oc-toast-warn-border);
+        background: var(--oc-toast-warn-background);
+        color: var(--oc-toast-warn-text);
       }
       .error {
-        border-color: var(--toast-error-border);
-        background: var(--toast-error-background);
-        color: var(--toast-error-text);
+        border-color: var(--oc-toast-error-border);
+        background: var(--oc-toast-error-background);
+        color: var(--oc-toast-error-text);
       }
       .info {
-        border-color: var(--toast-info-border);
-        background: var(--toast-info-background);
-        color: var(--toast-info-text);
+        border-color: var(--oc-toast-info-border);
+        background: var(--oc-toast-info-background);
+        color: var(--oc-toast-info-text);
       }
       .body {
         flex: 1;
@@ -239,7 +239,7 @@ export function ToastProvider({
           z-index: 100;
           display: flex;
           flex-direction: column;
-          gap: var(--control-gap);
+          gap: var(--oc-control-gap);
           box-sizing: border-box;
           width: min(22rem, calc(100vw - 2rem));
           margin: 0;
@@ -334,7 +334,7 @@ function ToastDismiss({ onClick }: { onClick: () => void }) @{
         height: 1.5rem;
         padding: 0;
         border: 0;
-        border-radius: calc(var(--border-radius) - 0.15rem);
+        border-radius: calc(var(--oc-border-radius) - 0.15rem);
         background: transparent;
         color: inherit;
         cursor: pointer;

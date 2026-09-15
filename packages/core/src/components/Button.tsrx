@@ -36,17 +36,17 @@ export function Button({
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: var(--control-gap);
+        gap: var(--oc-control-gap);
         box-sizing: border-box;
-        min-height: var(--control-height);
+        min-height: var(--oc-control-height);
         padding-block: 0;
-        padding-inline: var(--control-padding-inline);
-        border: 1px solid var(--control-border);
-        border-radius: var(--border-radius);
-        background: var(--button-background);
-        color: var(--button-text);
+        padding-inline: var(--oc-control-padding-inline);
+        border: 1px solid var(--oc-control-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-button-background);
+        color: var(--oc-button-text);
         font-family: inherit;
-        font-size: var(--control-font-size);
+        font-size: var(--oc-control-font-size);
         font-weight: 600;
         line-height: 1;
         cursor: pointer;
@@ -57,10 +57,10 @@ export function Button({
           box-shadow 0.15s ease;
       }
       .root:hover:not(:disabled) {
-        background: var(--button-background-hover);
+        background: var(--oc-button-background-hover);
       }
       .root:focus-visible {
-        outline: 2px solid var(--control-accent);
+        outline: 2px solid var(--oc-control-accent);
       }
       .root:disabled {
         opacity: 0.55;

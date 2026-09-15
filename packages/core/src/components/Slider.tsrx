@@ -17,8 +17,8 @@ export function Slider({ style, ...rest }: SliderProps) @{
         align-items: center;
         box-sizing: border-box;
         width: 100%;
-        min-height: var(--control-height);
-        color: var(--control-text-primary);
+        min-height: var(--oc-control-height);
+        color: var(--oc-control-text-primary);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -30,7 +30,7 @@ export function Slider({ style, ...rest }: SliderProps) @{
         margin: 0;
         padding: 0;
         background: transparent;
-        accent-color: var(--control-accent);
+        accent-color: var(--oc-control-accent);
         cursor: pointer;
         appearance: none;
       }
@@ -38,58 +38,58 @@ export function Slider({ style, ...rest }: SliderProps) @{
         cursor: not-allowed;
       }
       .field:focus-visible {
-        outline: 1px solid var(--control-accent);
+        outline: 1px solid var(--oc-control-accent);
       }
       .field::-webkit-slider-runnable-track {
         height: 0.375rem;
         border: 0;
         border-radius: 999px;
-        background: var(--control-track-background);
+        background: var(--oc-control-track-background);
       }
       .field::-webkit-slider-thumb {
         appearance: none;
         width: 1.125rem;
         height: 1.125rem;
         margin-top: -0.375rem;
-        border: 1px solid var(--control-border);
+        border: 1px solid var(--oc-control-border);
         border-radius: 50%;
-        background: var(--control-thumb-background);
+        background: var(--oc-control-thumb-background);
       }
       .field::-moz-range-track {
         height: 0.375rem;
-        border: 1px solid var(--control-border);
+        border: 1px solid var(--oc-control-border);
         border-radius: 999px;
-        background: var(--control-track-background);
+        background: var(--oc-control-track-background);
       }
       .field::-moz-range-progress {
         height: 0.375rem;
-        border: 1px solid var(--control-border);
+        border: 1px solid var(--oc-control-border);
         border-radius: 999px;
-        background: var(--control-accent);
+        background: var(--oc-control-accent);
       }
       .field::-moz-range-thumb {
         width: 1.125rem;
         height: 1.125rem;
-        border: 1px solid var(--control-border);
+        border: 1px solid var(--oc-control-border);
         border-radius: 50%;
-        background: var(--control-thumb-background);
+        background: var(--oc-control-thumb-background);
       }
       @supports selector(::slider-track) {
         .field::slider-track {
           height: 0.375rem;
           border: 0;
           border-radius: 999px;
-          background: var(--control-track-background);
+          background: var(--oc-control-track-background);
         }
         .field::slider-fill {
-          background: var(--control-accent);
+          background: var(--oc-control-accent);
         }
         .field::slider-thumb {
           width: 1.125rem;
           height: 1.125rem;
           border: 0;
           border-radius: 50%;
-          background: var(--control-thumb-background);
+          background: var(--oc-control-thumb-background);
         }
       }
     </style>

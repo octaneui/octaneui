@@ -28,9 +28,9 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
         position: relative;
         display: inline-flex;
         align-items: center;
-        gap: var(--control-gap);
-        color: var(--control-text-primary);
-        font-size: var(--control-font-size);
+        gap: var(--oc-control-gap);
+        color: var(--oc-control-text-primary);
+        font-size: var(--oc-control-font-size);
         line-height: 1.3;
         cursor: pointer;
         user-select: none;
@@ -58,9 +58,9 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
         box-sizing: border-box;
         width: 1.125rem;
         height: 1.125rem;
-        border: 1px solid var(--control-border);
+        border: 1px solid var(--oc-control-border);
         border-radius: 0.35rem;
-        background: var(--control-background);
+        background: var(--oc-control-background);
         transition:
           background 0.15s ease,
           border-color 0.15s ease,
@@ -68,18 +68,18 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
       }
       .check {
         display: flex;
-        color: var(--control-accent-text);
+        color: var(--oc-control-accent-text);
         opacity: 0;
         pointer-events: none;
       }
       .field:checked + .box {
-        background: var(--control-accent);
+        background: var(--oc-control-accent);
       }
       .field:checked + .box .check {
         opacity: 1;
       }
       .field:indeterminate + .box {
-        background: var(--control-accent);
+        background: var(--oc-control-accent);
       }
       .field:indeterminate + .box .check {
         opacity: 0;
@@ -89,13 +89,13 @@ export function Checkbox({ children, style, ...rest }: CheckboxProps) @{
         width: 0.55rem;
         height: 0.125rem;
         border-radius: 999px;
-        background: var(--control-accent-text);
+        background: var(--oc-control-accent-text);
       }
       .root:not(:has(.field:focus-visible)):has(.field:enabled):hover .field:not(:checked) + .box {
-        border-color: var(--control-border-hover);
+        border-color: var(--oc-control-border-hover);
       }
       .root:has(.field:focus-visible) .box {
-        outline: 1px solid var(--control-accent);
+        outline: 1px solid var(--oc-control-accent);
       }
     </style>
   </label>

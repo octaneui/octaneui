@@ -108,29 +108,29 @@ export function Pagination({
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-        min-width: var(--control-height);
-        min-height: var(--control-height);
-        padding: 0.35rem var(--control-padding-inline);
+        min-width: var(--oc-control-height);
+        min-height: var(--oc-control-height);
+        padding: 0.35rem var(--oc-control-padding-inline);
         border: 1px solid transparent;
-        border-radius: var(--border-radius);
+        border-radius: var(--oc-border-radius);
         background: transparent;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
         font: inherit;
-        font-size: var(--control-font-size);
+        font-size: var(--oc-control-font-size);
         line-height: 1;
         cursor: pointer;
       }
       .item:hover:not(:disabled) {
-        background: var(--control-background-active);
-        color: var(--control-text-primary);
+        background: var(--oc-control-background-active);
+        color: var(--oc-control-text-primary);
       }
       .item[aria-current="page"] {
-        background: var(--control-background-active);
-        color: var(--control-text-primary);
+        background: var(--oc-control-background-active);
+        color: var(--oc-control-text-primary);
         font-weight: 600;
       }
       .item:focus-visible {
-        outline: 2px solid var(--control-accent);
+        outline: 2px solid var(--oc-control-accent);
         outline-offset: 1px;
       }
       .item:disabled {
@@ -146,10 +146,10 @@ export function Pagination({
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        min-width: var(--control-height);
-        min-height: var(--control-height);
-        color: var(--text-secondary);
-        font-size: var(--control-font-size);
+        min-width: var(--oc-control-height);
+        min-height: var(--oc-control-height);
+        color: var(--oc-text-secondary);
+        font-size: var(--oc-control-font-size);
         line-height: 1;
         user-select: none;
       }

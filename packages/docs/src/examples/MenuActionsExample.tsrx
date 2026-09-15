@@ -27,7 +27,7 @@ export function MenuActionsExample() @{
       }
       .status {
         margin: 0;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
       }
     </style>
   </div>

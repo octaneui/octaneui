@@ -183,14 +183,14 @@ export function Datagrid<T>({
         overflow: auto;
         container-type: inline-size;
         isolation: isolate;
-        border: 1px solid var(--control-border);
-        border-radius: var(--border-radius);
-        background: var(--control-background);
-        color: var(--control-text-primary);
-        font-size: var(--control-font-size);
+        border: 1px solid var(--oc-control-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-control-background);
+        color: var(--oc-control-text-primary);
+        font-size: var(--oc-control-font-size);
       }
       .root:focus-visible {
-        outline: 2px solid var(--control-accent);
+        outline: 2px solid var(--oc-control-accent);
         outline-offset: 2px;
       }
       .table {
@@ -223,7 +223,7 @@ export function Datagrid<T>({
         box-sizing: border-box;
         width: 100cqi;
         max-width: 100%;
-        padding: 0.75rem var(--control-padding-inline);
+        padding: 0.75rem var(--oc-control-padding-inline);
         font-weight: 600;
         text-align: start;
         overflow-wrap: break-word;
@@ -232,16 +232,16 @@ export function Datagrid<T>({
         box-sizing: border-box;
         /* Preserve the intrinsic minimum of auto/fit-content tracks. */
         min-width: auto;
-        min-height: var(--control-height);
-        padding: 0.65rem var(--control-padding-inline);
+        min-height: var(--oc-control-height);
+        padding: 0.65rem var(--oc-control-padding-inline);
         border: 0;
-        border-bottom: 1px solid var(--control-border);
-        background: var(--control-background);
+        border-bottom: 1px solid var(--oc-control-border);
+        background: var(--oc-control-background);
         overflow-wrap: break-word;
         align-content: center;
       }
       .header {
-        background: var(--datagrid-header-background);
+        background: var(--oc-datagrid-header-background);
         font-weight: 600;
         text-align: start;
         pointer-events: auto;
@@ -254,19 +254,19 @@ export function Datagrid<T>({
         z-index: 2;
       }
       .cell[data-pin="left"] {
-        border-right: 1px solid var(--control-border);
+        border-right: 1px solid var(--oc-control-border);
       }
       /* Left-pinned cells supply their own trailing separator. */
       .cell[data-divider="left"],
       .cell[data-pin="right"] {
-        border-left: 1px solid var(--control-border);
+        border-left: 1px solid var(--oc-control-border);
       }
       .row:last-child > .cell {
         border-bottom: 0;
       }
       .empty {
         grid-column: 1 / -1;
-        color: var(--text-secondary);
+        color: var(--oc-text-secondary);
         text-align: center;
       }
     </style>

@@ -30,26 +30,26 @@ export function Calendar({
         --calendar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='2' y='3' width='12' height='11' rx='1.5' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cpath fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' d='M2 6.5h12M5.5 2v2.5M10.5 2v2.5'/%3E%3C/svg%3E");
         display: flex;
         align-items: center;
-        gap: var(--control-gap);
+        gap: var(--oc-control-gap);
         box-sizing: border-box;
         width: 100%;
-        min-height: var(--control-height);
+        min-height: var(--oc-control-height);
         padding-block: 0;
-        padding-inline: var(--control-padding-inline);
-        border: 1px solid var(--control-border);
-        border-radius: var(--border-radius);
-        background: var(--control-background);
-        color: var(--control-text-primary);
-        font-size: var(--control-font-size);
+        padding-inline: var(--oc-control-padding-inline);
+        border: 1px solid var(--oc-control-border);
+        border-radius: var(--oc-border-radius);
+        background: var(--oc-control-background);
+        color: var(--oc-control-text-primary);
+        font-size: var(--oc-control-font-size);
         transition:
           border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
       .root:not(:has(.field:focus-visible)):has(.field:enabled):hover {
-        border-color: var(--control-border-hover);
+        border-color: var(--oc-control-border-hover);
       }
       .root:has(.field:focus-visible) {
-        border-color: var(--control-border-focus);
+        border-color: var(--oc-control-border-focus);
       }
       .root:has(.field:disabled) {
         opacity: 0.55;
@@ -59,7 +59,7 @@ export function Calendar({
         flex: 1;
         min-width: 0;
         width: 100%;
-        height: var(--control-height);
+        height: var(--oc-control-height);
         margin: 0;
         padding: 0;
         border: 0;
@@ -79,7 +79,7 @@ export function Calendar({
         padding: 0;
         cursor: pointer;
         background: none;
-        background-color: var(--control-text-primary);
+        background-color: var(--oc-control-text-primary);
         mask: var(--calendar-icon) center / 1rem no-repeat;
       }
       .slot {
@@ -87,7 +87,7 @@ export function Calendar({
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        color: var(--control-text-primary);
+        color: var(--oc-control-text-primary);
         line-height: 1;
         pointer-events: none;
       }
