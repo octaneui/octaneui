@@ -48,6 +48,14 @@ export {
 export { Dialog, type DialogProps } from "./components/Dialog.tsrx";
 export { Popover, type PopoverProps } from "./components/Popover.tsrx";
 export {
+  Menu,
+  MenuItem,
+  MenuSeparator,
+  type MenuProps,
+  type MenuItemProps,
+  type MenuSeparatorProps,
+} from "./components/Menu.tsrx";
+export {
   Alert,
   type AlertProps,
   type AlertVariant,

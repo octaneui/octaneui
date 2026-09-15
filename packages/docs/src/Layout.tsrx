@@ -24,6 +24,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/components/disclosure": "Disclosure",
   "/components/dialog": "Dialog",
   "/components/popover": "Popover",
+  "/components/menu": "Menu",
   "/components/tabs": "Tabs",
   "/components/alert": "Alert",
   "/components/toast": "Toast",
@@ -68,6 +69,7 @@ export function Layout(props: LayoutProps) @{
         <a class="nav-link" href="/icons/lucide">Icons</a>
         <a class="nav-link" href="/components/input">Input</a>
         <a class="nav-link" href="/components/loading">Loading</a>
+        <a class="nav-link" href="/components/menu">Menu</a>
         <a class="nav-link" href="/components/pagination">Pagination</a>
         <a class="nav-link" href="/components/popover">Popover</a>
         <a class="nav-link" href="/components/progress">Progress</a>

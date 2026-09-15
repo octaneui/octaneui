@@ -106,6 +106,11 @@ export default defineConfig({
         layout: "/src/Layout.tsrx",
       }),
       new RenderRoute({
+        path: "/components/menu",
+        entry: ["MenuDocs", "/src/pages/Menu.tsrx"],
+        layout: "/src/Layout.tsrx",
+      }),
+      new RenderRoute({
         path: "/components/tabs",
         entry: ["TabsDocs", "/src/pages/Tabs.tsrx"],
         layout: "/src/Layout.tsrx",
