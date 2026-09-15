@@ -11,7 +11,12 @@ export {
 } from "./components/Datagrid.tsrx";
 
 export { Input, type InputProps } from "./components/Input.tsrx";
-export { Button, type ButtonProps } from "./components/Button.tsrx";
+export {
+  Button,
+  type ButtonProps,
+  type ButtonSize,
+  type ButtonVariant,
+} from "./components/Button.tsrx";
 export { Select, type SelectProps } from "./components/Select.tsrx";
 export { Slider, type SliderProps } from "./components/Slider.tsrx";
 export {

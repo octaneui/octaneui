@@ -6,9 +6,14 @@ type ButtonNativeProps = Omit<
   "className"
 >;
 
+export type ButtonSize = "normal" | "compact";
+export type ButtonVariant = "primary" | "secondary" | "ghost";
+
 export interface ButtonProps extends ButtonNativeProps {
   left?: OctaneNode;
   right?: OctaneNode;
+  size?: ButtonSize;
+  variant?: ButtonVariant;
 }
 
 export function Button({
@@ -16,12 +21,14 @@ export function Button({
   right,
   children,
   type,
+  size = "normal",
+  variant = "primary",
   ...rest
 }: ButtonProps) @{
   <button
     type={type ?? "button"}
     {...rest}
-    class={["root", rest.class]}
+    class={["root", size, variant, rest.class]}
   >
     @if (left) {
       <span class="slot">{left}</span>
@@ -54,10 +61,33 @@ export function Button({
         appearance: none;
         transition:
           background 0.15s ease,
+          border-color 0.15s ease,
           box-shadow 0.15s ease;
       }
-      .root:hover:not(:disabled) {
+      .primary:hover:not(:disabled) {
         background: var(--oc-button-background-hover);
+      }
+      .secondary {
+        background: transparent;
+        color: var(--oc-control-text-primary);
+      }
+      .secondary:hover:not(:disabled) {
+        background: var(--oc-surface-background-hover);
+        border-color: var(--oc-control-border-hover);
+      }
+      .ghost {
+        background: transparent;
+        border-color: transparent;
+        color: var(--oc-control-text-primary);
+      }
+      .ghost:hover:not(:disabled) {
+        background: var(--oc-surface-background-hover);
+      }
+      .compact {
+        min-height: 2rem;
+        padding-inline: 0.5rem;
+        gap: 0.375rem;
+        font-size: 0.8125rem;
       }
       .root:focus-visible {
         outline: 2px solid var(--oc-control-accent);
@@ -77,6 +107,10 @@ export function Button({
         display: block;
         width: 1rem;
         height: 1rem;
+      }
+      .compact .slot :where(svg) {
+        width: 0.875rem;
+        height: 0.875rem;
       }
     </style>
   </button>
