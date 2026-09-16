@@ -1,4 +1,4 @@
-import type { LucideIcon } from "@octaneui/icons/lucide";
+import { type LucideIcon, ExternalLink } from "@octaneui/icons/lucide";
 import {
   AppWindow,
   Bell,
@@ -54,7 +54,11 @@ const COMPONENTS: { name: string; href: string; Icon: LucideIcon }[] = [
 export function Home() @{
   <section class="page">
     <h1 class="title">Octane UI</h1>
-    <p class="lede">A component library for <a href="https://octanejs.dev" target="_blank" rel="noopener noreferrer">Octane.</a></p>
+    <p class="project-links">
+      <a href="https://github.com/octaneui/octaneui" target="_blank" rel="noopener">GitHub <ExternalLink size={12} /></a>
+      <a href="https://www.npmjs.com/package/@octaneui/core" target="_blank" rel="noopener">NPM <ExternalLink size={12} /></a>
+    </p>
+    <p class="lede">A component library for <a href="https://octanejs.dev" target="_blank" rel="noopener">Octane.</a></p>
 
     <h2 class="subtitle">Install</h2>
     <p class="lede">
@@ -82,7 +86,7 @@ export function Home() @{
         margin: 0 auto;
       }
       .title {
-        margin: 0 0 0.75rem;
+        margin: 0 0 0.25rem;
         font-size: 2.5rem;
         letter-spacing: -0.03em;
       }
@@ -90,6 +94,13 @@ export function Home() @{
         margin: 0 0 1.5rem;
         color: var(--oc-text-secondary);
         font-size: 1.15rem;
+      }
+      .project-links {
+        display: flex;
+        gap: 1rem;
+        margin: 0 0 1.5rem;
+        color: var(--oc-text-secondary);
+        font-size: 1rem;
       }
       .links {
         display: flex;
