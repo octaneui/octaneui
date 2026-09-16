@@ -12,7 +12,6 @@ export interface DatagridCellContext<T> {
 export interface DatagridColumn<T> {
   id: string;
   header: OctaneNode;
-  field?: keyof T;
   value?: (row: T) => unknown;
   cell?: (context: DatagridCellContext<T>) => OctaneNode;
   /** One CSS Grid track size, e.g. 12rem, 2fr, auto, minmax(), fit-content(). */
@@ -141,11 +140,7 @@ export function datagridCellValue<T>(
   row: T,
   column: DatagridColumn<T>,
 ): unknown {
-  return column.value
-    ? column.value(row)
-    : column.field === undefined
-      ? undefined
-      : row[column.field];
+  return column.value?.(row);
 }
 
 export function datagridPinStyle(

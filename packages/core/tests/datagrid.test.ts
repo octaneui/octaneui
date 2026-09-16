@@ -182,17 +182,20 @@ describe("Datagrid column model", () => {
     assert.deepEqual(datagridPinStyle(undefined, 0), {});
   });
 
-  it("supports fields, derived values, and empty display columns", () => {
+  it("supports derived values and empty display columns", () => {
     const row = { name: "Alex", count: 0 };
     assert.equal(
-      datagridCellValue(row, { id: "count", header: "Count", field: "count" }),
+      datagridCellValue(row, {
+        id: "count",
+        header: "Count",
+        value: (person) => person.count,
+      }),
       0,
     );
     assert.equal(
       datagridCellValue(row, {
         id: "derived",
         header: "Derived",
-        field: "count",
         value: (person) => person.name.toUpperCase(),
       }),
       "ALEX",

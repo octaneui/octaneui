@@ -73,9 +73,9 @@ export function DatagridDocs() @{
       Each column needs a unique
       <code>id</code>
       and a
-      <code>header</code>. Read a property with
-      <code>field</code>, derive a value with
-      <code>value(row)</code>, or render custom content with
+      <code>header</code>. Read a cell value with
+      <code>value(row)</code>
+      or render custom content with
       <code>cell({"{ row, rowIndex, column, value }"})</code>. Null and
       undefined values render as empty text by default.
     </p>

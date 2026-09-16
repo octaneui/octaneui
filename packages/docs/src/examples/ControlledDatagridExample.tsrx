@@ -28,9 +28,19 @@ const people: Person[] = [
 ];
 
 const columns: DatagridColumnDef<Person>[] = [
-  { id: "name", header: "Name", field: "name", size: "minmax(8rem, 2fr)" },
-  { id: "team", header: "Team", field: "team", size: "minmax(7rem, 1fr)" },
-  { id: "city", header: "City", field: "city", size: "25%" },
+  {
+    id: "name",
+    header: "Name",
+    value: (row) => row.name,
+    size: "minmax(8rem, 2fr)",
+  },
+  {
+    id: "team",
+    header: "Team",
+    value: (row) => row.team,
+    size: "minmax(7rem, 1fr)",
+  },
+  { id: "city", header: "City", value: (row) => row.city, size: "25%" },
 ];
 
 const PAGE_SIZE = 3;

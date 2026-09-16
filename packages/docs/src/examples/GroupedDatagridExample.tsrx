@@ -45,7 +45,7 @@ const people: Person[] = [
 ];
 
 const columns: DatagridColumnDef<Person>[] = [
-  { id: "id", header: "ID", field: "id", size: "4rem", pin: "left" },
+  { id: "id", header: "ID", value: (row) => row.id, size: "4rem", pin: "left" },
   {
     id: "person",
     header: "Person",
@@ -53,7 +53,7 @@ const columns: DatagridColumnDef<Person>[] = [
       {
         id: "name",
         header: "Name",
-        field: "name",
+        value: (row) => row.name,
         size: "minmax(10rem, 1fr)",
         pin: "left",
       },
@@ -64,14 +64,14 @@ const columns: DatagridColumnDef<Person>[] = [
           {
             id: "email",
             header: "Email",
-            field: "email",
+            value: (row) => row.email,
             size: "max-content",
             cell: ({ row }) => <a href={`mailto:${row.email}`}>{row.email}</a>,
           },
           {
             id: "city",
             header: "City",
-            field: "city",
+            value: (row) => row.city,
             size: "fit-content(12rem)",
           },
         ],
@@ -82,11 +82,16 @@ const columns: DatagridColumnDef<Person>[] = [
     id: "work",
     header: "Work",
     children: [
-      { id: "team", header: "Team", field: "team", size: "minmax(10rem, 2fr)" },
+      {
+        id: "team",
+        header: "Team",
+        value: (row) => row.team,
+        size: "minmax(10rem, 2fr)",
+      },
       {
         id: "salary",
         header: "Salary",
-        field: "salary",
+        value: (row) => row.salary,
         size: "7rem",
         align: "end",
         pin: "right",
